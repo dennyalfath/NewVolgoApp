@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="edu-cO-aZV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BhH-mO-ioH">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cbv-RZ-qkA" firstAttribute="trailing" secondItem="BhH-mO-ioH" secondAttribute="trailing" id="64R-6g-XKO"/>
+                            <constraint firstItem="BhH-mO-ioH" firstAttribute="top" secondItem="Cbv-RZ-qkA" secondAttribute="top" id="8Jb-jx-byh"/>
+                            <constraint firstItem="Cbv-RZ-qkA" firstAttribute="bottom" secondItem="BhH-mO-ioH" secondAttribute="bottom" id="Ttq-Q8-Mnj"/>
+                            <constraint firstItem="BhH-mO-ioH" firstAttribute="leading" secondItem="Cbv-RZ-qkA" secondAttribute="leading" id="scZ-mE-bDh"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Cbv-RZ-qkA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Journey" id="FdW-wp-o5T">
