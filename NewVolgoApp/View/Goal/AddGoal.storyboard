@@ -21,15 +21,26 @@
                                     <navigationItem title="Set New Goal" id="LJF-iq-4HA"/>
                                 </items>
                             </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXz-9c-W69">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="hhD-2m-ofT" firstAttribute="trailing" secondItem="cpi-Lc-mRu" secondAttribute="trailing" id="8YN-cu-BKO"/>
                             <constraint firstItem="hhD-2m-ofT" firstAttribute="top" secondItem="cpi-Lc-mRu" secondAttribute="top" id="aij-Cy-c9m"/>
+                            <constraint firstItem="lXz-9c-W69" firstAttribute="leading" secondItem="cpi-Lc-mRu" secondAttribute="leading" id="bNO-SF-dvc"/>
+                            <constraint firstItem="lXz-9c-W69" firstAttribute="top" secondItem="hhD-2m-ofT" secondAttribute="bottom" id="jMb-vg-DXo"/>
+                            <constraint firstItem="cpi-Lc-mRu" firstAttribute="bottom" secondItem="lXz-9c-W69" secondAttribute="bottom" id="pSs-4m-OWv"/>
                             <constraint firstItem="hhD-2m-ofT" firstAttribute="leading" secondItem="cpi-Lc-mRu" secondAttribute="leading" id="x8q-fJ-0Ob"/>
+                            <constraint firstItem="cpi-Lc-mRu" firstAttribute="trailing" secondItem="lXz-9c-W69" secondAttribute="trailing" id="ysN-Zn-egR"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cpi-Lc-mRu"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="lXz-9c-W69" id="hoM-4r-Um7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DvP-Qj-hZF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

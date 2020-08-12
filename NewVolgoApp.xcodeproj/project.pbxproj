@@ -28,6 +28,8 @@
 		24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */; };
 		24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1924E3A44800E6C0DD /* GoalModel.swift */; };
 		24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1B24E3A45300E6C0DD /* JourneyModel.swift */; };
+		247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */; };
+		247CF58924E43CA50043B2C1 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyViewController.swift; sourceTree = "<group>"; };
 		24393F1924E3A44800E6C0DD /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
 		24393F1B24E3A45300E6C0DD /* JourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyModel.swift; sourceTree = "<group>"; };
+		247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +236,8 @@
 		24393F0824E3A1CB00E6C0DD /* Form Subview */ = {
 			isa = PBXGroup;
 			children = (
+				247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */,
+				247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */,
 			);
 			path = "Form Subview";
 			sourceTree = "<group>";
@@ -379,6 +385,7 @@
 				24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */,
 				24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */,
 				24393EF524E3991700E6C0DD /* Goal.storyboard in Resources */,
+				247CF58924E43CA50043B2C1 /* TextFieldTableViewCell.xib in Resources */,
 				24393F0224E399CD00E6C0DD /* Library.storyboard in Resources */,
 				24393EFD24E3997A00E6C0DD /* Journey.storyboard in Resources */,
 				24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */,
@@ -410,6 +417,7 @@
 				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
 				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
 				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,
+				247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */,
 				24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */,
 				24393F0D24E3A22D00E6C0DD /* GoalViewController.swift in Sources */,
 				24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */,
