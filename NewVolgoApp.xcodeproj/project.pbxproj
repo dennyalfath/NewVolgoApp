@@ -38,6 +38,10 @@
 		247CF59524E457770043B2C1 /* LabelOnlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */; };
 		247CF59824E45C450043B2C1 /* PlusButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */; };
 		247CF59924E45C450043B2C1 /* PlusButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */; };
+		247CF59C24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59A24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift */; };
+		247CF59D24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */; };
+		247CF5A024E477120043B2C1 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59E24E477120043B2C1 /* DatePickerTableViewCell.swift */; };
+		247CF5A124E477120043B2C1 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +99,10 @@
 		247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelOnlyTableViewCell.xib; sourceTree = "<group>"; };
 		247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonTableViewCell.swift; sourceTree = "<group>"; };
 		247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonTableViewCell.xib; sourceTree = "<group>"; };
+		247CF59A24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchLabelTableViewCell.swift; sourceTree = "<group>"; };
+		247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchLabelTableViewCell.xib; sourceTree = "<group>"; };
+		247CF59E24E477120043B2C1 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
+		247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +250,8 @@
 				247CF58B24E44C4F0043B2C1 /* SubheadingTableViewCell.xib */,
 				247CF58E24E451BC0043B2C1 /* RecommendationTableViewCell.swift */,
 				247CF58F24E451BC0043B2C1 /* RecommendationTableViewCell.xib */,
+				247CF59A24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift */,
+				247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -262,6 +272,8 @@
 				247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */,
 				247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */,
 				247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */,
+				247CF59E24E477120043B2C1 /* DatePickerTableViewCell.swift */,
+				247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */,
 			);
 			path = "Form Subview";
 			sourceTree = "<group>";
@@ -409,6 +421,7 @@
 				24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */,
 				24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */,
 				247CF59124E451BC0043B2C1 /* RecommendationTableViewCell.xib in Resources */,
+				247CF5A124E477120043B2C1 /* DatePickerTableViewCell.xib in Resources */,
 				24393EF524E3991700E6C0DD /* Goal.storyboard in Resources */,
 				247CF58924E43CA50043B2C1 /* TextFieldTableViewCell.xib in Resources */,
 				24393F0224E399CD00E6C0DD /* Library.storyboard in Resources */,
@@ -417,6 +430,7 @@
 				24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */,
 				24393ECA24E396B900E6C0DD /* Assets.xcassets in Resources */,
 				247CF59924E45C450043B2C1 /* PlusButtonTableViewCell.xib in Resources */,
+				247CF59D24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib in Resources */,
 				247CF58D24E44C4F0043B2C1 /* SubheadingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +459,7 @@
 				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
 				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
 				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,
+				247CF59C24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift in Sources */,
 				247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */,
 				24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */,
 				24393F0D24E3A22D00E6C0DD /* GoalViewController.swift in Sources */,
@@ -458,6 +473,7 @@
 				247CF59424E457770043B2C1 /* LabelOnlyTableViewCell.swift in Sources */,
 				247CF59024E451BC0043B2C1 /* RecommendationTableViewCell.swift in Sources */,
 				24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */,
+				247CF5A024E477120043B2C1 /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

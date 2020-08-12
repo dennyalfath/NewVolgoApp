@@ -18,7 +18,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //Setup table view
+        //Setup table view (the important thing is only delegate and dataSource)
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = UITableView.automaticDimension
@@ -121,7 +121,6 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         return UITableView.automaticDimension
     }
     
-    
     /*
      // MARK: - Navigation
      
@@ -137,7 +136,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
 extension AddGoalViewController: PlusButtonTableViewCellDelegate {
     
     func didTapTheButton() {
-        arrayOfContent.insert("breakdownCell", at: arrayOfContent.index(before: arrayOfContent.endIndex))
+        arrayOfContent.insert("breakdownCell", at: 5)
         tableView.reloadData()
     }
     

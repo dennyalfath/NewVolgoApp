@@ -18,7 +18,10 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-2m-ofT">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Set New Goal" id="LJF-iq-4HA"/>
+                                    <navigationItem title="Set New Goal" id="LJF-iq-4HA">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4Hl-l9-4KG"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="eKK-w3-AWP"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXz-9c-W69">
