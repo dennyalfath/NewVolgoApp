@@ -13,7 +13,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     //Set the name of indexPath or Row with name to make it simple
-    var arrayOfContent: [String] = ["goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "deadlineCell"]
+    var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(SubheadingTableViewCell.nib(), forCellReuseIdentifier: SubheadingTableViewCell.identifier)
         tableView.register(RecommendationTableViewCell.nib(), forCellReuseIdentifier: RecommendationTableViewCell.identifier)
         tableView.register(LabelOnlyTableViewCell.nib(), forCellReuseIdentifier: LabelOnlyTableViewCell.identifier)
+        tableView.register(PlusButtonTableViewCell.nib(), forCellReuseIdentifier: PlusButtonTableViewCell.identifier)
     }
     
     //This function means how many row we want to add to the table view
@@ -38,6 +39,13 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     //This function helps us to do something with the row we choose
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        if arrayOfContent[indexPath.row] == "firstRowMarginCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FirstRowMarginCell", for: indexPath)
+            cell.selectionStyle = .none
+            return cell
+        }
+        
         if arrayOfContent[indexPath.row] == "goalCell" {
             
             //Define the cell with the registered custom cell
@@ -77,13 +85,25 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             return cell
         }
         
+        else if arrayOfContent[indexPath.row] == "plusButtonCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: PlusButtonTableViewCell.identifier, for: indexPath) as! PlusButtonTableViewCell
+            cell.selectionStyle = .none
+            cell.plusButton.layer.cornerRadius = cell.plusButton.frame.width / 2
+            cell.delegate = self
+            return cell
+        }
+        
         //Will never be called
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if arrayOfContent[indexPath.row] == "firstRowMarginCell" {
+            return 30
+        }
+        
         if arrayOfContent[indexPath.row] == "goalCell" {
-            return 80
+            return 60
         }
         
         else if arrayOfContent[indexPath.row] == "recommendationCell" {
@@ -91,7 +111,11 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
         else if arrayOfContent[indexPath.row] == "breakdownCell" {
-            return 80
+            return 60
+        }
+        
+        else if arrayOfContent[indexPath.row] == "plusButtonCell" {
+            return 60
         }
         
         return UITableView.automaticDimension
@@ -107,5 +131,14 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
      // Pass the selected object to the new view controller.
      }
      */
+    
+}
+
+extension AddGoalViewController: PlusButtonTableViewCellDelegate {
+    
+    func didTapTheButton() {
+        arrayOfContent.insert("breakdownCell", at: arrayOfContent.index(before: arrayOfContent.endIndex))
+        tableView.reloadData()
+    }
     
 }

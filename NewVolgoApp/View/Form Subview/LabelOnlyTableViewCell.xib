@@ -17,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="FvX-2N-0MG">
-                        <rect key="frame" x="20" y="0.0" width="280" height="62"/>
+                        <rect key="frame" x="20" y="10" width="280" height="42"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="FvX-2N-0MG" secondAttribute="bottom" id="Hy4-dA-hSm"/>
+                    <constraint firstAttribute="bottom" secondItem="FvX-2N-0MG" secondAttribute="bottom" constant="10" id="Hy4-dA-hSm"/>
                     <constraint firstItem="FvX-2N-0MG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="SSb-fC-3P6"/>
                     <constraint firstItem="FvX-2N-0MG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ezy-2l-lUP"/>
-                    <constraint firstItem="FvX-2N-0MG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="r41-il-ujn"/>
+                    <constraint firstItem="FvX-2N-0MG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="r41-il-ujn"/>
                     <constraint firstAttribute="trailing" secondItem="FvX-2N-0MG" secondAttribute="trailing" constant="20" id="yUn-ri-McG"/>
                 </constraints>
             </tableViewCellContentView>

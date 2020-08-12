@@ -36,6 +36,8 @@
 		247CF59124E451BC0043B2C1 /* RecommendationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF58F24E451BC0043B2C1 /* RecommendationTableViewCell.xib */; };
 		247CF59424E457770043B2C1 /* LabelOnlyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59224E457770043B2C1 /* LabelOnlyTableViewCell.swift */; };
 		247CF59524E457770043B2C1 /* LabelOnlyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */; };
+		247CF59824E45C450043B2C1 /* PlusButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */; };
+		247CF59924E45C450043B2C1 /* PlusButtonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		247CF58F24E451BC0043B2C1 /* RecommendationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecommendationTableViewCell.xib; sourceTree = "<group>"; };
 		247CF59224E457770043B2C1 /* LabelOnlyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelOnlyTableViewCell.swift; sourceTree = "<group>"; };
 		247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LabelOnlyTableViewCell.xib; sourceTree = "<group>"; };
+		247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusButtonTableViewCell.swift; sourceTree = "<group>"; };
+		247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlusButtonTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +260,8 @@
 				247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */,
 				247CF59224E457770043B2C1 /* LabelOnlyTableViewCell.swift */,
 				247CF59324E457770043B2C1 /* LabelOnlyTableViewCell.xib */,
+				247CF59624E45C450043B2C1 /* PlusButtonTableViewCell.swift */,
+				247CF59724E45C450043B2C1 /* PlusButtonTableViewCell.xib */,
 			);
 			path = "Form Subview";
 			sourceTree = "<group>";
@@ -410,6 +416,7 @@
 				247CF59524E457770043B2C1 /* LabelOnlyTableViewCell.xib in Resources */,
 				24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */,
 				24393ECA24E396B900E6C0DD /* Assets.xcassets in Resources */,
+				247CF59924E45C450043B2C1 /* PlusButtonTableViewCell.xib in Resources */,
 				247CF58D24E44C4F0043B2C1 /* SubheadingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +453,7 @@
 				24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */,
 				24393F1124E3A25100E6C0DD /* LibraryViewController.swift in Sources */,
 				24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */,
+				247CF59824E45C450043B2C1 /* PlusButtonTableViewCell.swift in Sources */,
 				24393F1524E3A26500E6C0DD /* EditGoalViewController.swift in Sources */,
 				247CF59424E457770043B2C1 /* LabelOnlyTableViewCell.swift in Sources */,
 				247CF59024E451BC0043B2C1 /* RecommendationTableViewCell.swift in Sources */,

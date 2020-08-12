@@ -9,32 +9,44 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="83" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="NewVolgoApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="337" height="83"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextFieldCell" rowHeight="52" id="KGk-i7-Jjw" customClass="TextFieldTableViewCell" customModule="NewVolgoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="52"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="337" height="83"/>
+                <rect key="frame" x="0.0" y="0.0" width="325" height="52"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-rA-fO8">
-                        <rect key="frame" x="20" y="20" width="297" height="43"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <textInputTraits key="textInputTraits"/>
-                    </textField>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kz6-2z-gBb">
+                        <rect key="frame" x="0.0" y="0.0" width="325" height="52"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="QcL-rA-fO8">
+                                <rect key="frame" x="20" y="10" width="285" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="QcL-rA-fO8" firstAttribute="leading" secondItem="Kz6-2z-gBb" secondAttribute="leading" constant="20" id="BRY-qV-SL7"/>
+                            <constraint firstAttribute="trailing" secondItem="QcL-rA-fO8" secondAttribute="trailing" constant="20" id="IUc-e8-o1M"/>
+                            <constraint firstItem="QcL-rA-fO8" firstAttribute="top" secondItem="Kz6-2z-gBb" secondAttribute="top" constant="10" id="dET-TB-u5p"/>
+                            <constraint firstItem="QcL-rA-fO8" firstAttribute="centerY" secondItem="Kz6-2z-gBb" secondAttribute="centerY" id="i4U-Rf-XY9"/>
+                            <constraint firstAttribute="bottom" secondItem="QcL-rA-fO8" secondAttribute="bottom" constant="10" id="t7i-jO-uvq"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="QcL-rA-fO8" secondAttribute="bottom" constant="20" id="0Y3-Mu-A66"/>
-                    <constraint firstAttribute="trailing" secondItem="QcL-rA-fO8" secondAttribute="trailing" constant="20" id="cFE-Sp-hZG"/>
-                    <constraint firstItem="QcL-rA-fO8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="dl0-QO-JoR"/>
-                    <constraint firstItem="QcL-rA-fO8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="qBc-QQ-9E7"/>
-                    <constraint firstItem="QcL-rA-fO8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="uRn-n7-JDs"/>
+                    <constraint firstItem="Kz6-2z-gBb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gh0-Kw-PkJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Kz6-2z-gBb" secondAttribute="bottom" id="fj0-fD-wcW"/>
+                    <constraint firstAttribute="trailing" secondItem="Kz6-2z-gBb" secondAttribute="trailing" id="sH8-8E-DqP"/>
+                    <constraint firstItem="Kz6-2z-gBb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z2W-uw-Aql"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="textField" destination="QcL-rA-fO8" id="u0F-sJ-4dG"/>
             </connections>
-            <point key="canvasLocation" x="144.20289855072465" y="165.73660714285714"/>
+            <point key="canvasLocation" x="132.60869565217394" y="154.6875"/>
         </tableViewCell>
     </objects>
 </document>
