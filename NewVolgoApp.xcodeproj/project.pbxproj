@@ -30,6 +30,8 @@
 		24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1B24E3A45300E6C0DD /* JourneyModel.swift */; };
 		247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */; };
 		247CF58924E43CA50043B2C1 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */; };
+		247CF58C24E44C4F0043B2C1 /* SubheadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF58A24E44C4F0043B2C1 /* SubheadingTableViewCell.swift */; };
+		247CF58D24E44C4F0043B2C1 /* SubheadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF58B24E44C4F0043B2C1 /* SubheadingTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +81,8 @@
 		24393F1B24E3A45300E6C0DD /* JourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyModel.swift; sourceTree = "<group>"; };
 		247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
+		247CF58A24E44C4F0043B2C1 /* SubheadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubheadingTableViewCell.swift; sourceTree = "<group>"; };
+		247CF58B24E44C4F0043B2C1 /* SubheadingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubheadingTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 		24393F0524E3A1AE00E6C0DD /* Subview */ = {
 			isa = PBXGroup;
 			children = (
+				247CF58A24E44C4F0043B2C1 /* SubheadingTableViewCell.swift */,
+				247CF58B24E44C4F0043B2C1 /* SubheadingTableViewCell.xib */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -390,6 +396,7 @@
 				24393EFD24E3997A00E6C0DD /* Journey.storyboard in Resources */,
 				24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */,
 				24393ECA24E396B900E6C0DD /* Assets.xcassets in Resources */,
+				247CF58D24E44C4F0043B2C1 /* SubheadingTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +428,7 @@
 				24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */,
 				24393F0D24E3A22D00E6C0DD /* GoalViewController.swift in Sources */,
 				24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */,
+				247CF58C24E44C4F0043B2C1 /* SubheadingTableViewCell.swift in Sources */,
 				24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */,
 				24393F1124E3A25100E6C0DD /* LibraryViewController.swift in Sources */,
 				24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */,

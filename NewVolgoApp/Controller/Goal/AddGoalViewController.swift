@@ -26,6 +26,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         //Register custom table view cell
         tableView.register(TextFieldTableViewCell.nib(), forCellReuseIdentifier: TextFieldTableViewCell.identifier)
+        tableView.register(SubheadingTableViewCell.nib(), forCellReuseIdentifier: SubheadingTableViewCell.identifier)
     }
     
     //This function means how many row we want to add to the table view
@@ -44,6 +45,13 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             //Set textfield display properties
             cell.textField.placeholder = "Eg. make 4 new friends"
             
+            return cell
+        }
+        
+        else if arrayOfContent[indexPath.row] == "subheadingCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: SubheadingTableViewCell.identifier, for: indexPath) as! SubheadingTableViewCell
+            cell.selectionStyle = .none
+            cell.labelBackground.layer.cornerRadius = 10
             return cell
         }
         
