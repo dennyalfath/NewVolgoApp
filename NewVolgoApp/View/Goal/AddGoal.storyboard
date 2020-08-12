@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Goal View Controller-->
+        <scene sceneID="0s2-Y7-Ejz">
+            <objects>
+                <viewController storyboardIdentifier="AddGoal" id="Hbe-6A-ssm" customClass="AddGoalViewController" customModule="NewVolgoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="35N-nG-94A">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hhD-2m-ofT">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Set New Goal" id="LJF-iq-4HA"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hhD-2m-ofT" firstAttribute="trailing" secondItem="cpi-Lc-mRu" secondAttribute="trailing" id="8YN-cu-BKO"/>
+                            <constraint firstItem="hhD-2m-ofT" firstAttribute="top" secondItem="cpi-Lc-mRu" secondAttribute="top" id="aij-Cy-c9m"/>
+                            <constraint firstItem="hhD-2m-ofT" firstAttribute="leading" secondItem="cpi-Lc-mRu" secondAttribute="leading" id="x8q-fJ-0Ob"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cpi-Lc-mRu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DvP-Qj-hZF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="94" y="131"/>
+        </scene>
+    </scenes>
+</document>

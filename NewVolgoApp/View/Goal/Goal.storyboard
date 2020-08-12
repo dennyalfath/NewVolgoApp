@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RdA-en-G8v">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--All Goals-->
+        <scene sceneID="e7l-TV-JNW">
+            <objects>
+                <viewController id="rMc-XG-DyG" customClass="GoalViewController" customModule="NewVolgoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ruX-2G-lAy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="o3v-1b-bc9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="All Goals" id="ZuV-7y-FFb">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p94-NX-NOf">
+                            <connections>
+                                <segue destination="PIN-th-nkQ" kind="presentation" id="hb2-bZ-zrJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wa7-aJ-UDl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4539.130434782609" y="127.90178571428571"/>
+        </scene>
+        <!--AddGoal-->
+        <scene sceneID="EFx-Ot-Ygn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddGoal" referencedIdentifier="AddGoal" id="PIN-th-nkQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tgN-Wd-cZq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5198.5507246376819" y="127.90178571428571"/>
+        </scene>
+        <!--Goal-->
+        <scene sceneID="cBh-27-C6G">
+            <objects>
+                <navigationController storyboardIdentifier="Goal" automaticallyAdjustsScrollViewInsets="NO" id="Bvl-vT-Agr" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Goal" image="GoalWhite" id="JGZ-hH-lJi"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="YMq-8G-oZq">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rMc-XG-DyG" kind="relationship" relationship="rootViewController" id="Eru-E3-iFp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRx-A1-nEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3588.4057971014495" y="127.90178571428571"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="223-BD-6Um">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RdA-en-G8v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="XlO-zn-muO">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" red="0.2784313725" green="0.25490196079999999" blue="0.1019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="selectedImageTintColor" red="0.98823529409999999" green="0.85490196080000003" blue="0.019607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bvl-vT-Agr" kind="relationship" relationship="viewControllers" id="u5w-RL-tsJ"/>
+                        <segue destination="0Tb-bi-bUy" kind="relationship" relationship="viewControllers" id="VPw-Fa-czs"/>
+                        <segue destination="vZh-6t-QSB" kind="relationship" relationship="viewControllers" id="3KG-d3-MD6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5A-xc-zqn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2678.2608695652175" y="127.90178571428571"/>
+        </scene>
+        <!--Journey-->
+        <scene sceneID="cy4-Dt-eYn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Journey" referencedIdentifier="Journey" id="0Tb-bi-bUy" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="6y7-us-hxP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lsv-ra-B1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2402" y="592"/>
+        </scene>
+        <!--Library-->
+        <scene sceneID="nWa-HW-7hR">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Library" referencedIdentifier="Library" id="vZh-6t-QSB" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TCj-dO-tI0"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OC5-Qa-RaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2854" y="593"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="GoalWhite" width="55" height="61"/>
+    </resources>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Journey-->
+        <scene sceneID="JYR-M8-A7I">
+            <objects>
+                <viewController id="1ck-IK-JtS" customClass="JourneyViewController" customModule="NewVolgoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="edu-cO-aZV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Cbv-RZ-qkA"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Journey" id="FdW-wp-o5T">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hJ-ZG-l7H">
+                            <connections>
+                                <segue destination="qIw-P3-QDQ" kind="presentation" id="E0s-Ls-Yyr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lhx-nI-ara" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1884.057971014493" y="119.86607142857142"/>
+        </scene>
+        <!--AddJourney-->
+        <scene sceneID="gLK-zq-RVE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddJourney" referencedIdentifier="AddJourney" id="qIw-P3-QDQ" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="czU-Cz-s8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2599" y="120"/>
+        </scene>
+        <!--Journey-->
+        <scene sceneID="dJh-aM-eK7">
+            <objects>
+                <navigationController storyboardIdentifier="Journey" automaticallyAdjustsScrollViewInsets="NO" id="9Wj-Fd-f0p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Journey" image="JourneyWhite" id="kxd-cl-b5w"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="T1d-Fb-WMS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1ck-IK-JtS" kind="relationship" relationship="rootViewController" id="wGy-p5-7KV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bUI-gX-Ruc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="973.91304347826099" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="JourneyWhite" width="74" height="65"/>
+    </resources>
+</document>

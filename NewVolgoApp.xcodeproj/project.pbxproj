@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBD24E396B800E6C0DD /* AppDelegate.swift */; };
+		24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBF24E396B800E6C0DD /* SceneDelegate.swift */; };
+		24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */; };
+		24393ECA24E396B900E6C0DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24393EC924E396B900E6C0DD /* Assets.xcassets */; };
+		24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393ECB24E396B900E6C0DD /* LaunchScreen.storyboard */; };
+		24393ED824E396B900E6C0DD /* NewVolgoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393ED724E396B900E6C0DD /* NewVolgoAppTests.swift */; };
+		24393EE324E396B900E6C0DD /* NewVolgoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EE224E396B900E6C0DD /* NewVolgoAppUITests.swift */; };
+		24393EF524E3991700E6C0DD /* Goal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393EF424E3991700E6C0DD /* Goal.storyboard */; };
+		24393EF724E3993200E6C0DD /* AddGoal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393EF624E3993200E6C0DD /* AddGoal.storyboard */; };
+		24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393EF824E3994500E6C0DD /* EditGoal.storyboard */; };
+		24393EFD24E3997A00E6C0DD /* Journey.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393EFC24E3997A00E6C0DD /* Journey.storyboard */; };
+		24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393EFE24E3998900E6C0DD /* AddJourney.storyboard */; };
+		24393F0224E399CD00E6C0DD /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24393F0124E399CD00E6C0DD /* Library.storyboard */; };
+		24393F0D24E3A22D00E6C0DD /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F0C24E3A22D00E6C0DD /* GoalViewController.swift */; };
+		24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F0E24E3A24700E6C0DD /* JourneyViewController.swift */; };
+		24393F1124E3A25100E6C0DD /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1024E3A25100E6C0DD /* LibraryViewController.swift */; };
+		24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1224E3A25C00E6C0DD /* AddGoalViewController.swift */; };
+		24393F1524E3A26500E6C0DD /* EditGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1424E3A26500E6C0DD /* EditGoalViewController.swift */; };
+		24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */; };
+		24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1924E3A44800E6C0DD /* GoalModel.swift */; };
+		24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1B24E3A45300E6C0DD /* JourneyModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24393ED424E396B900E6C0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24393EB224E396B700E6C0DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24393EB924E396B700E6C0DD;
+			remoteInfo = NewVolgoApp;
+		};
+		24393EDF24E396B900E6C0DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24393EB224E396B700E6C0DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24393EB924E396B700E6C0DD;
+			remoteInfo = NewVolgoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24393EBA24E396B800E6C0DD /* NewVolgoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewVolgoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24393EBD24E396B800E6C0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24393EBF24E396B800E6C0DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		24393EC724E396B800E6C0DD /* NewVolgoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewVolgoApp.xcdatamodel; sourceTree = "<group>"; };
+		24393EC924E396B900E6C0DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24393ECC24E396B900E6C0DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24393ECE24E396B900E6C0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24393ED324E396B900E6C0DD /* NewVolgoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewVolgoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24393ED724E396B900E6C0DD /* NewVolgoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVolgoAppTests.swift; sourceTree = "<group>"; };
+		24393ED924E396B900E6C0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24393EDE24E396B900E6C0DD /* NewVolgoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewVolgoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		24393EE224E396B900E6C0DD /* NewVolgoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewVolgoAppUITests.swift; sourceTree = "<group>"; };
+		24393EE424E396B900E6C0DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24393EF424E3991700E6C0DD /* Goal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Goal.storyboard; sourceTree = "<group>"; };
+		24393EF624E3993200E6C0DD /* AddGoal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddGoal.storyboard; sourceTree = "<group>"; };
+		24393EF824E3994500E6C0DD /* EditGoal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditGoal.storyboard; sourceTree = "<group>"; };
+		24393EFC24E3997A00E6C0DD /* Journey.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Journey.storyboard; sourceTree = "<group>"; };
+		24393EFE24E3998900E6C0DD /* AddJourney.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AddJourney.storyboard; sourceTree = "<group>"; };
+		24393F0124E399CD00E6C0DD /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
+		24393F0C24E3A22D00E6C0DD /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		24393F0E24E3A24700E6C0DD /* JourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyViewController.swift; sourceTree = "<group>"; };
+		24393F1024E3A25100E6C0DD /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		24393F1224E3A25C00E6C0DD /* AddGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGoalViewController.swift; sourceTree = "<group>"; };
+		24393F1424E3A26500E6C0DD /* EditGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGoalViewController.swift; sourceTree = "<group>"; };
+		24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyViewController.swift; sourceTree = "<group>"; };
+		24393F1924E3A44800E6C0DD /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
+		24393F1B24E3A45300E6C0DD /* JourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24393EB724E396B700E6C0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393ED024E396B900E6C0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393EDB24E396B900E6C0DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24393EB124E396B700E6C0DD = {
+			isa = PBXGroup;
+			children = (
+				24393EBC24E396B800E6C0DD /* NewVolgoApp */,
+				24393ED624E396B900E6C0DD /* NewVolgoAppTests */,
+				24393EE124E396B900E6C0DD /* NewVolgoAppUITests */,
+				24393EBB24E396B800E6C0DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24393EBB24E396B800E6C0DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24393EBA24E396B800E6C0DD /* NewVolgoApp.app */,
+				24393ED324E396B900E6C0DD /* NewVolgoAppTests.xctest */,
+				24393EDE24E396B900E6C0DD /* NewVolgoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24393EBC24E396B800E6C0DD /* NewVolgoApp */ = {
+			isa = PBXGroup;
+			children = (
+				24393EBD24E396B800E6C0DD /* AppDelegate.swift */,
+				24393EBF24E396B800E6C0DD /* SceneDelegate.swift */,
+				24393F1824E3A36E00E6C0DD /* DataModel */,
+				24393EF224E396E800E6C0DD /* Model */,
+				24393EF124E396D900E6C0DD /* Controller */,
+				24393EF024E396CF00E6C0DD /* View */,
+				24393EC924E396B900E6C0DD /* Assets.xcassets */,
+				24393ECB24E396B900E6C0DD /* LaunchScreen.storyboard */,
+				24393ECE24E396B900E6C0DD /* Info.plist */,
+			);
+			path = NewVolgoApp;
+			sourceTree = "<group>";
+		};
+		24393ED624E396B900E6C0DD /* NewVolgoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				24393ED724E396B900E6C0DD /* NewVolgoAppTests.swift */,
+				24393ED924E396B900E6C0DD /* Info.plist */,
+			);
+			path = NewVolgoAppTests;
+			sourceTree = "<group>";
+		};
+		24393EE124E396B900E6C0DD /* NewVolgoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24393EE224E396B900E6C0DD /* NewVolgoAppUITests.swift */,
+				24393EE424E396B900E6C0DD /* Info.plist */,
+			);
+			path = NewVolgoAppUITests;
+			sourceTree = "<group>";
+		};
+		24393EF024E396CF00E6C0DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0824E3A1CB00E6C0DD /* Form Subview */,
+				24393EFA24E3995500E6C0DD /* Goal */,
+				24393EFB24E3996400E6C0DD /* Journey */,
+				24393F0024E399BF00E6C0DD /* Library */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		24393EF124E396D900E6C0DD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0924E3A1F800E6C0DD /* Goal */,
+				24393F0A24E3A1FD00E6C0DD /* Journey */,
+				24393F0B24E3A20300E6C0DD /* Library */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		24393EF224E396E800E6C0DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24393F1924E3A44800E6C0DD /* GoalModel.swift */,
+				24393F1B24E3A45300E6C0DD /* JourneyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24393EFA24E3995500E6C0DD /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0524E3A1AE00E6C0DD /* Subview */,
+				24393EF424E3991700E6C0DD /* Goal.storyboard */,
+				24393EF624E3993200E6C0DD /* AddGoal.storyboard */,
+				24393EF824E3994500E6C0DD /* EditGoal.storyboard */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		24393EFB24E3996400E6C0DD /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0624E3A1B600E6C0DD /* Subview */,
+				24393EFC24E3997A00E6C0DD /* Journey.storyboard */,
+				24393EFE24E3998900E6C0DD /* AddJourney.storyboard */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		24393F0024E399BF00E6C0DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0124E399CD00E6C0DD /* Library.storyboard */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		24393F0524E3A1AE00E6C0DD /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		24393F0624E3A1B600E6C0DD /* Subview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Subview;
+			sourceTree = "<group>";
+		};
+		24393F0824E3A1CB00E6C0DD /* Form Subview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Form Subview";
+			sourceTree = "<group>";
+		};
+		24393F0924E3A1F800E6C0DD /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0C24E3A22D00E6C0DD /* GoalViewController.swift */,
+				24393F1224E3A25C00E6C0DD /* AddGoalViewController.swift */,
+				24393F1424E3A26500E6C0DD /* EditGoalViewController.swift */,
+			);
+			path = Goal;
+			sourceTree = "<group>";
+		};
+		24393F0A24E3A1FD00E6C0DD /* Journey */ = {
+			isa = PBXGroup;
+			children = (
+				24393F0E24E3A24700E6C0DD /* JourneyViewController.swift */,
+				24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */,
+			);
+			path = Journey;
+			sourceTree = "<group>";
+		};
+		24393F0B24E3A20300E6C0DD /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				24393F1024E3A25100E6C0DD /* LibraryViewController.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		24393F1824E3A36E00E6C0DD /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24393EB924E396B700E6C0DD /* NewVolgoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24393EE724E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoApp" */;
+			buildPhases = (
+				24393EB624E396B700E6C0DD /* Sources */,
+				24393EB724E396B700E6C0DD /* Frameworks */,
+				24393EB824E396B700E6C0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewVolgoApp;
+			productName = NewVolgoApp;
+			productReference = 24393EBA24E396B800E6C0DD /* NewVolgoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24393ED224E396B900E6C0DD /* NewVolgoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24393EEA24E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoAppTests" */;
+			buildPhases = (
+				24393ECF24E396B900E6C0DD /* Sources */,
+				24393ED024E396B900E6C0DD /* Frameworks */,
+				24393ED124E396B900E6C0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24393ED524E396B900E6C0DD /* PBXTargetDependency */,
+			);
+			name = NewVolgoAppTests;
+			productName = NewVolgoAppTests;
+			productReference = 24393ED324E396B900E6C0DD /* NewVolgoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24393EDD24E396B900E6C0DD /* NewVolgoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24393EED24E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoAppUITests" */;
+			buildPhases = (
+				24393EDA24E396B900E6C0DD /* Sources */,
+				24393EDB24E396B900E6C0DD /* Frameworks */,
+				24393EDC24E396B900E6C0DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24393EE024E396B900E6C0DD /* PBXTargetDependency */,
+			);
+			name = NewVolgoAppUITests;
+			productName = NewVolgoAppUITests;
+			productReference = 24393EDE24E396B900E6C0DD /* NewVolgoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24393EB224E396B700E6C0DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = "Denny Alfath";
+				TargetAttributes = {
+					24393EB924E396B700E6C0DD = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					24393ED224E396B900E6C0DD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 24393EB924E396B700E6C0DD;
+					};
+					24393EDD24E396B900E6C0DD = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = 24393EB924E396B700E6C0DD;
+					};
+				};
+			};
+			buildConfigurationList = 24393EB524E396B700E6C0DD /* Build configuration list for PBXProject "NewVolgoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24393EB124E396B700E6C0DD;
+			productRefGroup = 24393EBB24E396B800E6C0DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24393EB924E396B700E6C0DD /* NewVolgoApp */,
+				24393ED224E396B900E6C0DD /* NewVolgoAppTests */,
+				24393EDD24E396B900E6C0DD /* NewVolgoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24393EB824E396B700E6C0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24393EF724E3993200E6C0DD /* AddGoal.storyboard in Resources */,
+				24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */,
+				24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */,
+				24393EF524E3991700E6C0DD /* Goal.storyboard in Resources */,
+				24393F0224E399CD00E6C0DD /* Library.storyboard in Resources */,
+				24393EFD24E3997A00E6C0DD /* Journey.storyboard in Resources */,
+				24393EF924E3994500E6C0DD /* EditGoal.storyboard in Resources */,
+				24393ECA24E396B900E6C0DD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393ED124E396B900E6C0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393EDC24E396B900E6C0DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24393EB624E396B700E6C0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
+				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
+				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,
+				24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */,
+				24393F0D24E3A22D00E6C0DD /* GoalViewController.swift in Sources */,
+				24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */,
+				24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */,
+				24393F1124E3A25100E6C0DD /* LibraryViewController.swift in Sources */,
+				24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */,
+				24393F1524E3A26500E6C0DD /* EditGoalViewController.swift in Sources */,
+				24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393ECF24E396B900E6C0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24393ED824E396B900E6C0DD /* NewVolgoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24393EDA24E396B900E6C0DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24393EE324E396B900E6C0DD /* NewVolgoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24393ED524E396B900E6C0DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24393EB924E396B700E6C0DD /* NewVolgoApp */;
+			targetProxy = 24393ED424E396B900E6C0DD /* PBXContainerItemProxy */;
+		};
+		24393EE024E396B900E6C0DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24393EB924E396B700E6C0DD /* NewVolgoApp */;
+			targetProxy = 24393EDF24E396B900E6C0DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24393ECB24E396B900E6C0DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24393ECC24E396B900E6C0DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24393EE524E396B900E6C0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24393EE624E396B900E6C0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24393EE824E396B900E6C0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		24393EE924E396B900E6C0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		24393EEB24E396B900E6C0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewVolgoApp.app/NewVolgoApp";
+			};
+			name = Debug;
+		};
+		24393EEC24E396B900E6C0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewVolgoApp.app/NewVolgoApp";
+			};
+			name = Release;
+		};
+		24393EEE24E396B900E6C0DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewVolgoApp;
+			};
+			name = Debug;
+		};
+		24393EEF24E396B900E6C0DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 88F3B7HV75;
+				INFOPLIST_FILE = NewVolgoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NewVolgoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24393EB524E396B700E6C0DD /* Build configuration list for PBXProject "NewVolgoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24393EE524E396B900E6C0DD /* Debug */,
+				24393EE624E396B900E6C0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24393EE724E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24393EE824E396B900E6C0DD /* Debug */,
+				24393EE924E396B900E6C0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24393EEA24E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24393EEB24E396B900E6C0DD /* Debug */,
+				24393EEC24E396B900E6C0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24393EED24E396B900E6C0DD /* Build configuration list for PBXNativeTarget "NewVolgoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24393EEE24E396B900E6C0DD /* Debug */,
+				24393EEF24E396B900E6C0DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24393EC724E396B800E6C0DD /* NewVolgoApp.xcdatamodel */,
+			);
+			currentVersion = 24393EC724E396B800E6C0DD /* NewVolgoApp.xcdatamodel */;
+			path = NewVolgoApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 24393EB224E396B700E6C0DD /* Project object */;
+}
