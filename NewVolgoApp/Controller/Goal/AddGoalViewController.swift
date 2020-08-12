@@ -13,7 +13,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     //Set the name of indexPath or Row with name to make it simple
-    var arrayOfContent: [String] = ["goalCell", "subheadingCell", "recommendationCell", "breakdownCell", "deadlineCell"]
+    var arrayOfContent: [String] = ["goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "deadlineCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +27,8 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         //Register custom table view cell
         tableView.register(TextFieldTableViewCell.nib(), forCellReuseIdentifier: TextFieldTableViewCell.identifier)
         tableView.register(SubheadingTableViewCell.nib(), forCellReuseIdentifier: SubheadingTableViewCell.identifier)
+        tableView.register(RecommendationTableViewCell.nib(), forCellReuseIdentifier: RecommendationTableViewCell.identifier)
+        tableView.register(LabelOnlyTableViewCell.nib(), forCellReuseIdentifier: LabelOnlyTableViewCell.identifier)
     }
     
     //This function means how many row we want to add to the table view
@@ -55,13 +57,41 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             return cell
         }
         
+        else if arrayOfContent[indexPath.row] == "recommendationCell" {
+            let recommendationCell = tableView.dequeueReusableCell(withIdentifier: RecommendationTableViewCell.identifier, for: indexPath) as! RecommendationTableViewCell
+            recommendationCell.selectionStyle = .none
+            return recommendationCell
+        }
+        
+        else if arrayOfContent[indexPath.row] == "labelCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: LabelOnlyTableViewCell.identifier, for: indexPath) as! LabelOnlyTableViewCell
+            cell.selectionStyle = .none
+            cell.labelOnly.text = "Breakdown your goal into steps:"
+            return cell
+        }
+        
+        else if arrayOfContent[indexPath.row] == "breakdownCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.identifier, for: indexPath) as! TextFieldTableViewCell
+            cell.selectionStyle = .none
+            cell.textField.placeholder = "Breakdown your goal here"
+            return cell
+        }
+        
         //Will never be called
         return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if arrayOfContent[indexPath.row] == "goalCell" {
-            return 70
+            return 80
+        }
+        
+        else if arrayOfContent[indexPath.row] == "recommendationCell" {
+            return 550
+        }
+        
+        else if arrayOfContent[indexPath.row] == "breakdownCell" {
+            return 80
         }
         
         return UITableView.automaticDimension

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecommendationTableViewCell" rowHeight="400" id="KGk-i7-Jjw" customClass="RecommendationTableViewCell" customModule="NewVolgoApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="284" height="400"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="284" height="400"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="jFc-DV-v7q">
+                        <rect key="frame" x="20" y="20" width="244" height="360"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="gQ7-kt-MZS">
+                                <rect key="frame" x="0.0" y="0.0" width="244" height="116.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwQ-ji-seP">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="116.5"/>
+                                        <state key="normal" title="Advance Career" image="AdvanceCareer"/>
+                                        <connections>
+                                            <action selector="advCareerTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vgh-6s-1R9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMd-24-G1G">
+                                        <rect key="frame" x="123.5" y="0.0" width="120.5" height="116.5"/>
+                                        <state key="normal" title="Develop New Skills" image="DevelopNewSkills"/>
+                                        <connections>
+                                            <action selector="devNewGoalTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h2b-Bo-igw"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XKw-cW-UAr">
+                                <rect key="frame" x="0.0" y="121.5" width="244" height="117"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nY7-Vb-4Lf">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="117"/>
+                                        <state key="normal" title="Explore Interest" image="ExploreInterest"/>
+                                        <connections>
+                                            <action selector="exploreIntTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iiq-Dl-7i1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l22-ak-wrN">
+                                        <rect key="frame" x="123.5" y="0.0" width="120.5" height="117"/>
+                                        <state key="normal" title="Fun Experience" image="FunExperience"/>
+                                        <connections>
+                                            <action selector="funExpTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Z6D-hy-hCy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="hxm-po-xSH">
+                                <rect key="frame" x="0.0" y="243.5" width="244" height="116.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyb-Ni-eW6">
+                                        <rect key="frame" x="0.0" y="0.0" width="120.5" height="116.5"/>
+                                        <state key="normal" title="Self Confidence" image="SelfConfidence"/>
+                                        <connections>
+                                            <action selector="selfConfidenceTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8xp-0n-R6y"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ5-so-rpz">
+                                        <rect key="frame" x="123.5" y="0.0" width="120.5" height="116.5"/>
+                                        <state key="normal" title="Social Interaction" image="SocialInteraction"/>
+                                        <connections>
+                                            <action selector="socInteractionTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UKW-Ga-3t7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jFc-DV-v7q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="81L-J3-OIc"/>
+                    <constraint firstAttribute="bottom" secondItem="jFc-DV-v7q" secondAttribute="bottom" constant="20" id="dKO-tL-X0R"/>
+                    <constraint firstItem="jFc-DV-v7q" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="kIw-zd-VqW"/>
+                    <constraint firstAttribute="trailing" secondItem="jFc-DV-v7q" secondAttribute="trailing" constant="20" id="l6I-Qn-ua2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="56.521739130434788" y="105.13392857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="AdvanceCareer" width="174" height="162"/>
+        <image name="DevelopNewSkills" width="174" height="162"/>
+        <image name="ExploreInterest" width="174" height="162"/>
+        <image name="FunExperience" width="174" height="162"/>
+        <image name="SelfConfidence" width="174" height="162"/>
+        <image name="SocialInteraction" width="174" height="162"/>
+    </resources>
+</document>
