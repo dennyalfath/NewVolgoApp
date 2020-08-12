@@ -14,7 +14,19 @@
                     <view key="view" contentMode="scaleToFill" id="ruX-2G-lAy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bsC-Er-R1s">
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="o3v-1b-bc9" firstAttribute="trailing" secondItem="bsC-Er-R1s" secondAttribute="trailing" id="AdH-i4-OwZ"/>
+                            <constraint firstItem="o3v-1b-bc9" firstAttribute="bottom" secondItem="bsC-Er-R1s" secondAttribute="bottom" id="bQi-SD-hHN"/>
+                            <constraint firstItem="bsC-Er-R1s" firstAttribute="leading" secondItem="o3v-1b-bc9" secondAttribute="leading" id="cfZ-cm-8jm"/>
+                            <constraint firstItem="bsC-Er-R1s" firstAttribute="top" secondItem="o3v-1b-bc9" secondAttribute="top" id="t1Q-8W-CQk"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="o3v-1b-bc9"/>
                     </view>
                     <navigationItem key="navigationItem" title="All Goals" id="ZuV-7y-FFb">
