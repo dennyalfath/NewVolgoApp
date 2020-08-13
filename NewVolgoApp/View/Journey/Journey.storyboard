@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Wj-Fd-f0p">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -27,10 +27,10 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionCell" id="Ffa-oE-BdW">
-                                        <rect key="frame" x="0.0" y="75.5" width="927" height="574"/>
+                                        <rect key="frame" x="0.0" y="62.5" width="927" height="600"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7kd-2r-fA6">
-                                            <rect key="frame" x="0.0" y="0.0" width="927" height="574"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Dg2-Gk-H3t">
+                                            <rect key="frame" x="0.0" y="0.0" width="927" height="600"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-child" translatesAutoresizingMaskIntoConstraints="NO" id="sba-PQ-edn">
@@ -40,13 +40,41 @@
                                                         <constraint firstAttribute="height" constant="215" id="guY-JT-MRo"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1u-dw-2lS">
+                                                    <rect key="frame" x="20" y="230.5" width="71" height="29"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iB8-Ke-M1P">
+                                                    <rect key="frame" x="20" y="259" width="35" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="HRq-8e-HBY">
+                                                    <rect key="frame" x="20" y="288" width="292" height="177"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="177" id="IB9-DQ-iYy"/>
+                                                    </constraints>
+                                                    <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="sba-PQ-edn" firstAttribute="top" secondItem="7kd-2r-fA6" secondAttribute="topMargin" id="2Tb-Iz-xuf"/>
-                                                <constraint firstItem="sba-PQ-edn" firstAttribute="centerX" secondItem="7kd-2r-fA6" secondAttribute="centerX" constant="-297.5" id="vIJ-UH-MUQ"/>
+                                                <constraint firstItem="sba-PQ-edn" firstAttribute="top" secondItem="Dg2-Gk-H3t" secondAttribute="topMargin" id="2Tb-Iz-xuf"/>
+                                                <constraint firstItem="HRq-8e-HBY" firstAttribute="leading" secondItem="Dg2-Gk-H3t" secondAttribute="leading" constant="20" id="FaI-3h-Nnp"/>
+                                                <constraint firstItem="HRq-8e-HBY" firstAttribute="top" secondItem="sba-PQ-edn" secondAttribute="bottom" constant="65" id="IIR-Hm-bVO"/>
+                                                <constraint firstItem="HRq-8e-HBY" firstAttribute="centerX" secondItem="sba-PQ-edn" secondAttribute="centerX" id="ra9-UB-duo"/>
+                                                <constraint firstItem="sba-PQ-edn" firstAttribute="centerX" secondItem="Dg2-Gk-H3t" secondAttribute="centerX" constant="-297.5" id="vIJ-UH-MUQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="927" height="574"/>
+                                        <size key="customSize" width="927" height="600"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -68,7 +96,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="UICollectionView" destination="zh7-Cf-n5Q" id="Lpn-K2-VBT"/>
+                        <outlet property="collectionView" destination="zh7-Cf-n5Q" id="fVa-Gy-04m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhx-nI-ara" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
