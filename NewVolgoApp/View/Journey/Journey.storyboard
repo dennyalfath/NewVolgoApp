@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-t6-1df">
-                                <rect key="frame" x="20" y="106" width="374" height="645"/>
+                                <rect key="frame" x="50" y="50" width="374" height="645"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4wA-Fn-dnj">
@@ -28,9 +28,9 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="24G-Wg-82r" customClass="JourneyCollectionViewCell" customModule="NewVolgoApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="24.5" width="320" height="596"/>
+                                        <rect key="frame" x="0.0" y="5.5" width="320" height="596"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Gby-Ml-lCK">
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ajb-py-n01">
                                             <rect key="frame" x="0.0" y="0.0" width="320" height="596"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
@@ -58,22 +58,22 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-a2-TMl">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-a2-TMl">
                                                     <rect key="frame" x="8" y="315" width="304" height="264"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="GiI-LW-FHd"/>
                                                     </constraints>
-                                                    <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                    <string key="text">Your Journey description are displaying here :)Your Journey description are displaying here :)Your Journey description are displaying here :)Your Journey description are displaying here :)Your Journey description are displaying here :)Your Journey description are displaying here :)</string>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="leading" secondItem="Gby-Ml-lCK" secondAttribute="leading" id="5Hg-uO-VpK"/>
-                                                <constraint firstItem="AXq-a2-TMl" firstAttribute="leading" secondItem="Gby-Ml-lCK" secondAttribute="leading" constant="8" id="6ID-eH-9BL"/>
-                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="top" secondItem="Gby-Ml-lCK" secondAttribute="top" id="7t2-85-RKW"/>
+                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" id="5Hg-uO-VpK"/>
+                                                <constraint firstItem="AXq-a2-TMl" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" constant="8" id="6ID-eH-9BL"/>
+                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="top" secondItem="ajb-py-n01" secondAttribute="top" id="7t2-85-RKW"/>
                                                 <constraint firstItem="H1N-ss-DNo" firstAttribute="top" secondItem="Q5C-Mk-p0u" secondAttribute="bottom" constant="25" id="TKA-5a-lmC"/>
                                                 <constraint firstAttribute="trailing" secondItem="AXq-a2-TMl" secondAttribute="trailing" constant="8" id="bFH-wI-4NF"/>
                                                 <constraint firstAttribute="trailing" secondItem="Q5C-Mk-p0u" secondAttribute="trailing" constant="4" id="cGS-LN-lmd"/>
@@ -82,7 +82,7 @@
                                                 <constraint firstItem="AXq-a2-TMl" firstAttribute="top" secondItem="iv5-Nz-LWv" secondAttribute="bottom" constant="15" id="hzH-mA-FSl"/>
                                                 <constraint firstAttribute="bottom" secondItem="AXq-a2-TMl" secondAttribute="bottom" constant="17" id="lex-9M-RZ5"/>
                                                 <constraint firstItem="iv5-Nz-LWv" firstAttribute="top" secondItem="H1N-ss-DNo" secondAttribute="bottom" constant="2" id="p0m-J0-aJJ"/>
-                                                <constraint firstItem="H1N-ss-DNo" firstAttribute="leading" secondItem="Gby-Ml-lCK" secondAttribute="leading" constant="8" id="tjT-3j-7qQ"/>
+                                                <constraint firstItem="H1N-ss-DNo" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" constant="8" id="tjT-3j-7qQ"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="320" height="596"/>

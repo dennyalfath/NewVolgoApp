@@ -10,7 +10,7 @@ import UIKit
 
 class JourneyViewController: UIViewController{
 
-    var image = [UIImage(named: "img-child")]
+    var image = [UIImage(named: "img-child"), UIImage(named: "img-adult")]
     @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
@@ -35,6 +35,7 @@ extension JourneyViewController: UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! JourneyCollectionViewCell
+        cell.imgImage.image = image[indexPath.row]
         return cell
     }
 }
