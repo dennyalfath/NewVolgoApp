@@ -9,7 +9,7 @@
 import UIKit
 
 class DatePickerTableViewCell: UITableViewCell {
-
+    
     //Set constant for cell reusable identifier to avoid typo
     static let identifier = "DatePickerTableViewCell"
     
@@ -20,10 +20,17 @@ class DatePickerTableViewCell: UITableViewCell {
     
     @IBOutlet weak var datePickerLabel: UILabel!
     @IBOutlet weak var datePickerOutlet: UIDatePicker!
+    var date: String!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        datePickerLabel.textColor = UIColor.systemBlue
+        datePickerLabel.attributedText = NSAttributedString(string: "Text", attributes:
+        [.underlineStyle: NSUnderlineStyle.single.rawValue])
+        
+        date = formattedString(date: datePickerOutlet.date)
+        datePickerLabel.text = date
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,4 +39,14 @@ class DatePickerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    func formattedString(date: Date) -> String {
+        let df = DateFormatter()
+        df.dateFormat = "EEEE, d MMM yyyy"
+        return df.string(from: date)
+    }
+    
+    @IBAction func datePickerValueChange(_ sender: UIDatePicker) {
+        date = formattedString(date: sender.date)
+        datePickerLabel.text = date
+    }
 }

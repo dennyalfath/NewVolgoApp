@@ -13,7 +13,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     //Set the name of indexPath or Row with name to make it simple
-    var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell"]
+    var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell", "switchLabelCell"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +30,8 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(RecommendationTableViewCell.nib(), forCellReuseIdentifier: RecommendationTableViewCell.identifier)
         tableView.register(LabelOnlyTableViewCell.nib(), forCellReuseIdentifier: LabelOnlyTableViewCell.identifier)
         tableView.register(PlusButtonTableViewCell.nib(), forCellReuseIdentifier: PlusButtonTableViewCell.identifier)
+        tableView.register(SwitchLabelTableViewCell.nib(), forCellReuseIdentifier: SwitchLabelTableViewCell.identifier)
+        tableView.register(DatePickerTableViewCell.nib(), forCellReuseIdentifier: DatePickerTableViewCell.identifier)
     }
     
     //This function means how many row we want to add to the table view
@@ -93,6 +95,19 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             return cell
         }
         
+        else if arrayOfContent[indexPath.row] == "switchLabelCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: SwitchLabelTableViewCell.identifier, for: indexPath) as! SwitchLabelTableViewCell
+            cell.selectionStyle = .none
+            cell.delegate = self
+            return cell
+        }
+        
+        else if arrayOfContent[indexPath.row] == "datePickerCell" {
+            let cell = tableView.dequeueReusableCell(withIdentifier: DatePickerTableViewCell.identifier, for: indexPath) as! DatePickerTableViewCell
+            cell.selectionStyle = .none
+            return cell
+        }
+        
         //Will never be called
         return UITableViewCell()
     }
@@ -118,6 +133,10 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             return 60
         }
         
+        else if arrayOfContent[indexPath.row] == "datePickerCell" {
+            return 300
+        }
+        
         return UITableView.automaticDimension
     }
     
@@ -136,8 +155,25 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
 extension AddGoalViewController: PlusButtonTableViewCellDelegate {
     
     func didTapTheButton() {
-        arrayOfContent.insert("breakdownCell", at: 5)
+        arrayOfContent.insert("breakdownCell", at: 6)
         tableView.reloadData()
     }
+    
+}
+
+extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
+    
+    func didChangeValueSwitch(state: Bool) {
+        if state {
+            arrayOfContent.insert("datePickerCell", at: arrayOfContent.endIndex)
+        } else {
+            arrayOfContent.remove(at: arrayOfContent.endIndex - 1)
+        }
+        
+        tableView.reloadData()
+        tableView.scrollToRow(at: IndexPath(row: arrayOfContent.endIndex - 1, section: 0), at: .bottom, animated: true)
+    }
+    
+    
     
 }

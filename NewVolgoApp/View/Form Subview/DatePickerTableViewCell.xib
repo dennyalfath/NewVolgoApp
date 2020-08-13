@@ -26,7 +26,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="Wze-tP-NKP">
-                                <rect key="frame" x="0.0" y="31" width="308" height="199"/>
+                                <rect key="frame" x="0.0" y="30.5" width="308" height="199.5"/>
+                                <connections>
+                                    <action selector="datePickerValueChange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="VGa-9o-3ha"/>
+                                </connections>
                             </datePicker>
                         </subviews>
                     </stackView>
