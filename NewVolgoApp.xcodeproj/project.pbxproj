@@ -44,6 +44,7 @@
 		247CF5A124E477120043B2C1 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */; };
 		24951EAD24E57AAD00F75921 /* CardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */; };
 		24951EAE24E57AAD00F75921 /* CardListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */; };
+		24951EB224E5957900F75921 /* GoalBreakdownModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24951EB124E5957900F75921 /* GoalBreakdownModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
 		24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListTableViewCell.swift; sourceTree = "<group>"; };
 		24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListTableViewCell.xib; sourceTree = "<group>"; };
+		24951EB124E5957900F75921 /* GoalBreakdownModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalBreakdownModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 			children = (
 				24393F1924E3A44800E6C0DD /* GoalModel.swift */,
 				24393F1B24E3A45300E6C0DD /* JourneyModel.swift */,
+				24951EB124E5957900F75921 /* GoalBreakdownModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24951EB224E5957900F75921 /* GoalBreakdownModel.swift in Sources */,
 				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
 				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
 				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,

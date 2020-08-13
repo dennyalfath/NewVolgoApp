@@ -10,6 +10,7 @@ import UIKit
 
 class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    var 
     @IBOutlet weak var tableView: UITableView!
     
     //Set the name of indexPath or Row with name to make it simple
@@ -139,6 +140,15 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         return UITableView.automaticDimension
     }
+    
+    @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
+        
+    }
+    
+    @IBAction func cancelBtnPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     
     /*
      // MARK: - Navigation

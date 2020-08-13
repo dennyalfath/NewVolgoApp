@@ -1,35 +1,33 @@
 //
-//  GoalModel.swift
+//  GoalBreakdownModel.swift
 //  NewVolgoApp
 //
-//  Created by Denny Alfath on 12/08/20.
+//  Created by Denny Alfath on 13/08/20.
 //  Copyright © 2020 Denny Alfath. All rights reserved.
 //
 
 import UIKit
 import CoreData
 
-struct GoalModel {
+struct GoalBreakdownModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) -> Goal {
-        let newGoal = Goal(context: context)
+    func create(_ breakdown: String) -> GoalBreakdown {
+        let newGoalBreakdown = GoalBreakdown(context: context)
         do {
-            newGoal.id = UUID()
-            newGoal.title = title
-            newGoal.deadline = deadline
-            newGoal.duedate = dueDate
+            newGoalBreakdown.id = UUID()
+            newGoalBreakdown.breakdown = breakdown
             
             try context.save()
         } catch {
             print(error)
         }
-        return newGoal
+        return newGoalBreakdown
     }
     
-    func retrieve() -> [Goal]? {
-        let request: NSFetchRequest<Goal> = Goal.fetchRequest()
+    func retrieve() -> [GoalBreakdown]? {
+        let request: NSFetchRequest<GoalBreakdown> = GoalBreakdown.fetchRequest()
         do {
             return try context.fetch(request)
         } catch {
@@ -37,5 +35,4 @@ struct GoalModel {
         }
         return nil
     }
-    
 }
