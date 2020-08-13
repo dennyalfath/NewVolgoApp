@@ -5,11 +5,19 @@
         <attribute name="duedate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="title" attributeType="String"/>
+        <relationship name="goalBreakdowns" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="GoalBreakdown" inverseName="parentGoal" inverseEntity="GoalBreakdown"/>
     </entity>
     <entity name="GoalBreakdown" representedClassName="GoalBreakdown" syncable="YES" codeGenerationType="class">
         <attribute name="breakdown" attributeType="String"/>
-        <attribute name="goalid" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="id" attributeType="UUID" usesScalarValueType="NO"/>
+        <relationship name="parentGoal" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Goal" inverseName="goalBreakdowns" inverseEntity="Goal"/>
+    </entity>
+    <entity name="Journey" representedClassName="Journey" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="desc" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="image" optional="YES" attributeType="Binary"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <entity name="Library" representedClassName="Library" syncable="YES" codeGenerationType="class">
         <attribute name="date" attributeType="Date" usesScalarValueType="NO"/>
@@ -19,8 +27,9 @@
         <attribute name="title" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Goal" positionX="-63" positionY="-18" width="128" height="103"/>
-        <element name="GoalBreakdown" positionX="-54" positionY="-9" width="128" height="88"/>
-        <element name="Library" positionX="-36" positionY="9" width="128" height="118"/>
+        <element name="Goal" positionX="-102.0859375" positionY="4.04296875" width="128" height="118"/>
+        <element name="GoalBreakdown" positionX="127.67578125" positionY="67.16015625" width="128" height="88"/>
+        <element name="Library" positionX="68.26171875" positionY="-117.65625" width="128" height="118"/>
+        <element name="Journey" positionX="9" positionY="9" width="128" height="118"/>
     </elements>
 </model>
