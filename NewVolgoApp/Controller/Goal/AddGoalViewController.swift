@@ -10,8 +10,13 @@ import UIKit
 
 class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    var 
     @IBOutlet weak var tableView: UITableView!
+    
+    var setGoal = GoalModel()
+    var goalTextField = UITextField()
+    var breakdownTextField = UITextField()
+    var deadline: Bool = false
+    var duedate: Date?
     
     //Set the name of indexPath or Row with name to make it simple
     var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell", "switchLabelCell"]
@@ -57,7 +62,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             
             //Set textfield display properties
             cell.textField.placeholder = "Eg. make 4 new friends"
-            
+            goalTextField = cell.textField
             return cell
         }
         
@@ -71,6 +76,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         else if arrayOfContent[indexPath.row] == "recommendationCell" {
             let recommendationCell = tableView.dequeueReusableCell(withIdentifier: RecommendationTableViewCell.identifier, for: indexPath) as! RecommendationTableViewCell
             recommendationCell.selectionStyle = .none
+//            recommendationCell.delegate = self
             return recommendationCell
         }
         
@@ -85,6 +91,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.identifier, for: indexPath) as! TextFieldTableViewCell
             cell.selectionStyle = .none
             cell.textField.placeholder = "Breakdown your goal here"
+            breakdownTextField = cell.textField
             return cell
         }
         
@@ -100,12 +107,20 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchLabelTableViewCell.identifier, for: indexPath) as! SwitchLabelTableViewCell
             cell.selectionStyle = .none
             cell.delegate = self
+            
             return cell
         }
         
         else if arrayOfContent[indexPath.row] == "datePickerCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: DatePickerTableViewCell.identifier, for: indexPath) as! DatePickerTableViewCell
             cell.selectionStyle = .none
+            
+            if deadline == true {
+                duedate = cell.datePickerOutlet.date
+            } else {
+                duedate = nil
+            }
+            
             return cell
         }
         
@@ -142,23 +157,16 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
+        let settedGoal = setGoal.create(goalTextField.text!, deadline, duedate!)
         
+        if settedGoal {
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     @IBAction func cancelBtnPressed(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
     
 }
 
@@ -176,6 +184,7 @@ extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
     func didChangeValueSwitch(state: Bool) {
         if state {
             arrayOfContent.insert("datePickerCell", at: arrayOfContent.endIndex)
+            deadline = true
         } else {
             arrayOfContent.remove(at: arrayOfContent.endIndex - 1)
         }
@@ -184,6 +193,12 @@ extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
         tableView.scrollToRow(at: IndexPath(row: arrayOfContent.endIndex - 1, section: 0), at: .bottom, animated: true)
     }
     
-    
-    
 }
+
+//extension AddGoalViewController: RecommendationTableViewCellDelegate {
+//
+//    func btnTapped(title: String) {
+////        textField = title
+//    }
+//
+//}

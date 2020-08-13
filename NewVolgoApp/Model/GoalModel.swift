@@ -9,11 +9,15 @@
 import UIKit
 import CoreData
 
+protocol GoalModelDelegate {
+    func updateGoal(goal: Goal)
+}
+
 struct GoalModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) -> Goal {
+    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) -> Bool {
         let newGoal = Goal(context: context)
         do {
             newGoal.id = UUID()
@@ -25,7 +29,8 @@ struct GoalModel {
         } catch {
             print(error)
         }
-        return newGoal
+//        return newGoal
+        return true
     }
     
     func retrieve() -> [Goal]? {

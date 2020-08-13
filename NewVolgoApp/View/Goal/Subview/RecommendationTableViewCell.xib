@@ -26,14 +26,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120.5" height="116.5"/>
                                         <state key="normal" title="Advance Career" image="AdvanceCareer"/>
                                         <connections>
-                                            <action selector="advCareerTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vgh-6s-1R9"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="F8K-5l-KD2"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uMd-24-G1G">
                                         <rect key="frame" x="123.5" y="0.0" width="120.5" height="116.5"/>
                                         <state key="normal" title="Develop New Skills" image="DevelopNewSkills"/>
                                         <connections>
-                                            <action selector="devNewGoalTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="h2b-Bo-igw"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="eJf-i3-LRd"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -45,14 +45,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120.5" height="117"/>
                                         <state key="normal" title="Explore Interest" image="ExploreInterest"/>
                                         <connections>
-                                            <action selector="exploreIntTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Iiq-Dl-7i1"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="iP4-N9-4YX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l22-ak-wrN">
                                         <rect key="frame" x="123.5" y="0.0" width="120.5" height="117"/>
                                         <state key="normal" title="Fun Experience" image="FunExperience"/>
                                         <connections>
-                                            <action selector="funExpTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Z6D-hy-hCy"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Vj3-OF-nCN"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -64,14 +64,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120.5" height="116.5"/>
                                         <state key="normal" title="Self Confidence" image="SelfConfidence"/>
                                         <connections>
-                                            <action selector="selfConfidenceTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="8xp-0n-R6y"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vcX-sn-FiW"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ5-so-rpz">
                                         <rect key="frame" x="123.5" y="0.0" width="120.5" height="116.5"/>
                                         <state key="normal" title="Social Interaction" image="SocialInteraction"/>
                                         <connections>
-                                            <action selector="socInteractionTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="UKW-Ga-3t7"/>
+                                            <action selector="buttonTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="apY-q6-S9L"/>
                                         </connections>
                                     </button>
                                 </subviews>

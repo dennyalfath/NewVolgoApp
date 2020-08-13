@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol RecommendationTableViewCellDelegate: class {
+    func btnTapped(title: String)
+}
+
 class RecommendationTableViewCell: UITableViewCell {
 
     //Set constant for cell reusable identifier to avoid typo
@@ -18,22 +22,10 @@ class RecommendationTableViewCell: UITableViewCell {
         return UINib(nibName: "RecommendationTableViewCell", bundle: nil)
     }
     
-    @IBAction func advCareerTapped(_ sender: UIButton) {
-    }
+    weak var delegate: RecommendationTableViewCellDelegate!
     
-    @IBAction func devNewGoalTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func exploreIntTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func funExpTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func selfConfidenceTapped(_ sender: UIButton) {
-    }
-    
-    @IBAction func socInteractionTapped(_ sender: UIButton) {
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        delegate.btnTapped(title: sender.currentTitle!)
     }
     
     override func awakeFromNib() {
