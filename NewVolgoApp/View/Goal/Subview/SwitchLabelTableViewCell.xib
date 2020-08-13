@@ -17,16 +17,16 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QZJ-l2-gQO">
-                        <rect key="frame" x="20" y="0.0" width="406" height="62"/>
+                        <rect key="frame" x="20" y="10" width="406" height="42"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set your deadline:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="ppc-i0-r0D">
-                                <rect key="frame" x="0.0" y="0.0" width="349" height="62"/>
+                                <rect key="frame" x="0.0" y="0.0" width="349" height="42"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="egJ-XR-Xza">
-                                <rect key="frame" x="357" y="0.0" width="51" height="62"/>
+                                <rect key="frame" x="357" y="0.0" width="51" height="42"/>
                                 <connections>
                                     <action selector="switchValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="Qwn-Pe-0RD"/>
                                 </connections>
@@ -35,10 +35,10 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="QZJ-l2-gQO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0Oe-mu-Hdp"/>
+                    <constraint firstItem="QZJ-l2-gQO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Oe-mu-Hdp"/>
                     <constraint firstAttribute="trailing" secondItem="QZJ-l2-gQO" secondAttribute="trailing" constant="20" id="MOJ-zF-mqu"/>
                     <constraint firstItem="QZJ-l2-gQO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="djO-cr-Jc8"/>
-                    <constraint firstAttribute="bottom" secondItem="QZJ-l2-gQO" secondAttribute="bottom" id="vkI-2g-YXm"/>
+                    <constraint firstAttribute="bottom" secondItem="QZJ-l2-gQO" secondAttribute="bottom" constant="10" id="vkI-2g-YXm"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

@@ -42,6 +42,8 @@
 		247CF59D24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */; };
 		247CF5A024E477120043B2C1 /* DatePickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF59E24E477120043B2C1 /* DatePickerTableViewCell.swift */; };
 		247CF5A124E477120043B2C1 /* DatePickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */; };
+		24951EAD24E57AAD00F75921 /* CardListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */; };
+		24951EAE24E57AAD00F75921 /* CardListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SwitchLabelTableViewCell.xib; sourceTree = "<group>"; };
 		247CF59E24E477120043B2C1 /* DatePickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerTableViewCell.swift; sourceTree = "<group>"; };
 		247CF59F24E477120043B2C1 /* DatePickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatePickerTableViewCell.xib; sourceTree = "<group>"; };
+		24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListTableViewCell.swift; sourceTree = "<group>"; };
+		24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardListTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +256,8 @@
 				247CF58F24E451BC0043B2C1 /* RecommendationTableViewCell.xib */,
 				247CF59A24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift */,
 				247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */,
+				24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */,
+				24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -420,6 +426,7 @@
 				24393EF724E3993200E6C0DD /* AddGoal.storyboard in Resources */,
 				24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */,
 				24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */,
+				24951EAE24E57AAD00F75921 /* CardListTableViewCell.xib in Resources */,
 				247CF59124E451BC0043B2C1 /* RecommendationTableViewCell.xib in Resources */,
 				247CF5A124E477120043B2C1 /* DatePickerTableViewCell.xib in Resources */,
 				24393EF524E3991700E6C0DD /* Goal.storyboard in Resources */,
@@ -473,6 +480,7 @@
 				247CF59424E457770043B2C1 /* LabelOnlyTableViewCell.swift in Sources */,
 				247CF59024E451BC0043B2C1 /* RecommendationTableViewCell.swift in Sources */,
 				24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */,
+				24951EAD24E57AAD00F75921 /* CardListTableViewCell.swift in Sources */,
 				247CF5A024E477120043B2C1 /* DatePickerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
