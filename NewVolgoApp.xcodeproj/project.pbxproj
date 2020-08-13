@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C6D75124E5C03900C303C1 /* JourneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */; };
 		24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBD24E396B800E6C0DD /* AppDelegate.swift */; };
 		24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBF24E396B800E6C0DD /* SceneDelegate.swift */; };
 		24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyCollectionViewCell.swift; sourceTree = "<group>"; };
 		24393EBA24E396B800E6C0DD /* NewVolgoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewVolgoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24393EBD24E396B800E6C0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24393EBF24E396B800E6C0DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				24393F0E24E3A24700E6C0DD /* JourneyViewController.swift */,
+				13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */,
 				24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */,
 			);
 			path = Journey;
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
+				13C6D75124E5C03900C303C1 /* JourneyCollectionViewCell.swift in Sources */,
 				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
 				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,
 				24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */,
