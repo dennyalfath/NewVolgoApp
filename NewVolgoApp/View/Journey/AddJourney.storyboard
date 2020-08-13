@@ -18,9 +18,18 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-ii-JLH">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
-                                    <navigationItem title="Write Journey" id="geA-WB-DiS"/>
+                                    <navigationItem title="Add Your Journey" id="geA-WB-DiS">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="eue-Np-JhY"/>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="Gze-3D-zYh"/>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-Ly-aIK">
+                                <rect key="frame" x="20" y="140" width="141" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="Add Button "/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
