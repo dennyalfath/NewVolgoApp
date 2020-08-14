@@ -17,20 +17,34 @@ struct GoalModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) -> Bool {
-        let newGoal = Goal(context: context)
+    //    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) -> Goal {
+    //        let newGoal = Goal(context: context)
+    //        do {
+    //            newGoal.id = UUID()
+    //            newGoal.title = title
+    //            newGoal.deadline = deadline
+    //            newGoal.duedate = dueDate
+    //
+    //            try context.save()
+    //        } catch {
+    //            print(error)
+    //        }
+    //        return newGoal
+    //    }
+    
+    func create(_ title: String, _ deadline: Bool, _ dueDate: Date) {
+        let goalEntity = NSEntityDescription.entity(forEntityName: "Goal", in: context)
+        let newGoal = NSManagedObject(entity: goalEntity!, insertInto: context)
+        newGoal.setValue(title, forKey: "title")
+        newGoal.setValue(deadline, forKey: "deadline")
+        newGoal.setValue(dueDate, forKey: "duedate")
+        
         do {
-            newGoal.id = UUID()
-            newGoal.title = title
-            newGoal.deadline = deadline
-            newGoal.duedate = dueDate
-            
+            // save data ke entity user core data
             try context.save()
-        } catch {
-            print(error)
+        } catch let err{
+            print(err)
         }
-//        return newGoal
-        return true
     }
     
     func retrieve() -> [Goal]? {

@@ -8,10 +8,6 @@
 
 import UIKit
 
-protocol DatePickerTableViewDelegate: class {
-    func getDate()
-}
-
 class DatePickerTableViewCell: UITableViewCell {
     
     //Set constant for cell reusable identifier to avoid typo
@@ -26,7 +22,6 @@ class DatePickerTableViewCell: UITableViewCell {
     @IBOutlet weak var datePickerOutlet: UIDatePicker!
     
     var date: String!
-    weak var delegate: DatePickerTableViewDelegate!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -54,6 +49,5 @@ class DatePickerTableViewCell: UITableViewCell {
     @IBAction func datePickerValueChange(_ sender: UIDatePicker) {
         date = formattedString(date: sender.date)
         datePickerLabel.text = date
-        delegate.getDate()
     }
 }

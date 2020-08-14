@@ -13,10 +13,12 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var tableView: UITableView!
     
     var setGoal = GoalModel()
+    var setGoalBreakdown = GoalBreakdownModel()
+    
     var goalTextField = UITextField()
     var breakdownTextField = UITextField()
     var deadline: Bool = false
-    var duedate: Date?
+    var duedate = UIDatePicker()
     
     //Set the name of indexPath or Row with name to make it simple
     var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell", "switchLabelCell"]
@@ -76,7 +78,6 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         else if arrayOfContent[indexPath.row] == "recommendationCell" {
             let recommendationCell = tableView.dequeueReusableCell(withIdentifier: RecommendationTableViewCell.identifier, for: indexPath) as! RecommendationTableViewCell
             recommendationCell.selectionStyle = .none
-//            recommendationCell.delegate = self
             return recommendationCell
         }
         
@@ -114,13 +115,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         else if arrayOfContent[indexPath.row] == "datePickerCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: DatePickerTableViewCell.identifier, for: indexPath) as! DatePickerTableViewCell
             cell.selectionStyle = .none
-            
-            if deadline == true {
-                duedate = cell.datePickerOutlet.date
-            } else {
-                duedate = nil
-            }
-            
+            duedate = cell.datePickerOutlet
             return cell
         }
         
@@ -157,11 +152,8 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
-        let settedGoal = setGoal.create(goalTextField.text!, deadline, duedate!)
-        
-        if settedGoal {
-            dismiss(animated: true, completion: nil)
-        }
+        setGoal.create(goalTextField.text!, deadline, duedate.date)
+        setGoalBreakdown.create(breakdownTextField.text!)
     }
     
     @IBAction func cancelBtnPressed(_ sender: UIBarButtonItem) {
@@ -187,6 +179,7 @@ extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
             deadline = true
         } else {
             arrayOfContent.remove(at: arrayOfContent.endIndex - 1)
+            deadline = false
         }
         
         tableView.reloadData()
