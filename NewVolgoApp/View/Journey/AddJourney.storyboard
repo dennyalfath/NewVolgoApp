@@ -24,24 +24,46 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-Ly-aIK">
-                                <rect key="frame" x="20" y="139" width="141" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-xJ-E7k">
+                                <rect key="frame" x="33" y="98" width="349" height="192"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="192" id="pRS-Mz-BDZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-Ly-aIK">
+                                <rect key="frame" x="158" y="298" width="99" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="4bM-k6-AnA"/>
+                                    <constraint firstAttribute="width" constant="99" id="Hvk-yg-Vln"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="Image"/>
+                                <connections>
+                                    <action selector="addButtonImg:" destination="Hms-qw-QjK" eventType="touchUpInside" id="sns-nb-BNr"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bep-UW-fX0" firstAttribute="trailing" secondItem="SqJ-ii-JLH" secondAttribute="trailing" id="Ibx-Ec-atR"/>
+                            <constraint firstItem="SNg-Ly-aIK" firstAttribute="leading" secondItem="bep-UW-fX0" secondAttribute="leading" constant="158" id="JJ8-sR-vRG"/>
+                            <constraint firstItem="vOu-xJ-E7k" firstAttribute="leading" secondItem="bep-UW-fX0" secondAttribute="leading" constant="33" id="L0p-sH-6XT"/>
+                            <constraint firstItem="vOu-xJ-E7k" firstAttribute="centerX" secondItem="SNg-Ly-aIK" secondAttribute="centerX" id="PDI-fQ-mGk"/>
+                            <constraint firstItem="bep-UW-fX0" firstAttribute="trailing" secondItem="SNg-Ly-aIK" secondAttribute="trailing" constant="157" id="cq7-r0-y2w"/>
+                            <constraint firstItem="vOu-xJ-E7k" firstAttribute="top" secondItem="SqJ-ii-JLH" secondAttribute="bottom" constant="10" id="nvD-pu-cgs"/>
+                            <constraint firstItem="SNg-Ly-aIK" firstAttribute="top" secondItem="vOu-xJ-E7k" secondAttribute="bottom" constant="8" id="oWA-yn-fY5"/>
                             <constraint firstItem="SqJ-ii-JLH" firstAttribute="top" secondItem="bep-UW-fX0" secondAttribute="top" id="slZ-iX-5pI"/>
                             <constraint firstItem="SqJ-ii-JLH" firstAttribute="leading" secondItem="4lx-cL-cxG" secondAttribute="leading" id="w8M-Ae-nRp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bep-UW-fX0"/>
                     </view>
+                    <connections>
+                        <outlet property="imgView" destination="vOu-xJ-E7k" id="MAI-ts-LUT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KT-rk-lPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="45" y="169"/>
+            <point key="canvasLocation" x="44.927536231884062" y="168.75"/>
         </scene>
     </scenes>
     <resources>
