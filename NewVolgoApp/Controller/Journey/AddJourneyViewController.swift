@@ -13,28 +13,39 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var textView: UITextView!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var dateTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        //Adding bottom line for Textfield Title
+        let bottomLine = CALayer()
+        bottomLine.frame = CGRect(x: 0, y: textField.frame.height - 1, width: textField.frame.width, height: 1)
+        bottomLine.backgroundColor = UIColor.init(red: 83/255, green: 87/255, blue: 94/255, alpha: 1).cgColor
+        
+            textField.layer.addSublayer(bottomLine)
         textView.text = "Your journey description"
         textView.textColor = UIColor.lightGray
         textView.returnKeyType = .done
         textView.delegate = self
         self.textView.delegate = self
         
-        //Adding bottom line for Textfield Title
-        let bottomLine = CALayer()
-        bottomLine.frame = CGRect(x: 0, y: textField.frame.height - 2, width: textField.frame.width, height: 2)
-        bottomLine.backgroundColor = UIColor.init(red: 83/255, green: 87/255, blue: 94/255, alpha: 1).cgColor
-    
-        textField.layer.addSublayer(bottomLine)
+        textView.layer.borderWidth = 1
+        textView.layer.borderColor = UIColor.init(displayP3Red: 83/255, green: 87/255, blue: 94/255, alpha: 1).cgColor
+
         
-        
-    
+    //MARK: - UITextView Setting
         NotificationCenter.default.addObserver(self, selector: #selector(AddJourneyViewController.updateTextView(notification:)), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(AddJourneyViewController.updateTextView(notification:)), name: UIResponder.keyboardWillHideNotification , object: nil)
+        
+        //MARK: - UIDatePicker Setting
+        let datePicker = UIDatePicker()
+        datePicker.datePickerMode = UIDatePicker.Mode.date
+        
+        datePicker.addTarget(self, action: #selector(AddJourneyViewController.datePickerValueChange(sender:)), for: UIControl.Event.valueChanged)
+        dateTextField.inputView = datePicker
     }
     
     //MARK: - UITextView Delegate
@@ -110,5 +121,16 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
             textView.scrollIndicatorInsets = textView.contentInset
         }
         textView.scrollRangeToVisible(textView.selectedRange)
+    }
+    
+    //MARK: - UIDatePicker Function
+    @objc func datePickerValueChange(sender: UIDatePicker){
+        let formatter = DateFormatter()
+        
+        formatter.dateStyle = DateFormatter.Style.medium
+        
+        formatter.timeStyle = DateFormatter.Style.none
+        
+        dateTextField.text = formatter.string(from: sender.date)
     }
 }
