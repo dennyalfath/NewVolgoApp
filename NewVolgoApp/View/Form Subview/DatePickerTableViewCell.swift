@@ -30,7 +30,7 @@ class DatePickerTableViewCell: UITableViewCell {
         datePickerLabel.attributedText = NSAttributedString(string: "Text", attributes:
         [.underlineStyle: NSUnderlineStyle.single.rawValue])
         
-        date = formattedString(date: datePickerOutlet.date)
+        date = DateFormatterHelper.dateFormatterToString(date: datePickerOutlet.date)
         datePickerLabel.text = date
     }
 
@@ -40,14 +40,8 @@ class DatePickerTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func formattedString(date: Date) -> String {
-        let df = DateFormatter()
-        df.dateFormat = "EEEE, d MMM yyyy"
-        return df.string(from: date)
-    }
-    
     @IBAction func datePickerValueChange(_ sender: UIDatePicker) {
-        date = formattedString(date: sender.date)
+        date = DateFormatterHelper.dateFormatterToString(date: sender.date)
         datePickerLabel.text = date
     }
 }

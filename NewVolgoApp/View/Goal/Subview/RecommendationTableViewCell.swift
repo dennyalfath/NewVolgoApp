@@ -13,7 +13,7 @@ protocol RecommendationTableViewCellDelegate: class {
 }
 
 class RecommendationTableViewCell: UITableViewCell {
-
+    
     //Set constant for cell reusable identifier to avoid typo
     static let identifier = "RecommendationTableViewCell"
     
@@ -32,10 +32,10 @@ class RecommendationTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
     

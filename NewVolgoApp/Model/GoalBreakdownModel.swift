@@ -13,29 +13,17 @@ struct GoalBreakdownModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-//    func create(_ breakdown: String) -> GoalBreakdown {
-//        let newGoalBreakdown = GoalBreakdown(context: context)
-//        do {
-//            newGoalBreakdown.id = UUID()
-//            newGoalBreakdown.breakdown = breakdown
-//
-//            try context.save()
-//        } catch {
-//            print(error)
-//        }
-//        return newGoalBreakdown
-//    }
-    func create(_ breakdown: String) {
-        let goalBreakdownEntity = NSEntityDescription.entity(forEntityName: "GoalBreakdown", in: context)
-        let newGoalBreakdown = NSManagedObject(entity: goalBreakdownEntity!, insertInto: context)
-        newGoalBreakdown.setValue(breakdown, forKey: "breakdown")
-        
+    func create(_ breakdown: String) -> GoalBreakdown {
+        let newGoalBreakdown = GoalBreakdown(context: context)
         do {
-            // save data ke entity user core data
+            newGoalBreakdown.id = UUID()
+            newGoalBreakdown.breakdown = breakdown
+            
             try context.save()
-        } catch let err{
-            print(err)
+        } catch {
+            print("Error saving data \(error)")
         }
+        return newGoalBreakdown
     }
     
     func retrieve() -> [GoalBreakdown]? {
@@ -43,7 +31,7 @@ struct GoalBreakdownModel {
         do {
             return try context.fetch(request)
         } catch {
-            print("Error")
+            print("Error retrieving data \(error)")
         }
         return nil
     }

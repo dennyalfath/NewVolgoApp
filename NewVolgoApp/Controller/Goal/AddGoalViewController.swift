@@ -12,13 +12,13 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     @IBOutlet weak var tableView: UITableView!
     
-    var setGoal = GoalModel()
-    var setGoalBreakdown = GoalBreakdownModel()
+    var goalModel = GoalModel()
+    var goalBreakdownModel = GoalBreakdownModel()
     
     var goalTextField = UITextField()
     var breakdownTextField = UITextField()
     var deadline: Bool = false
-    var duedate = UIDatePicker()
+    var duedate: UIDatePicker?
     
     //Set the name of indexPath or Row with name to make it simple
     var arrayOfContent: [String] = ["firstRowMarginCell", "goalCell", "subheadingCell", "recommendationCell", "labelCell", "breakdownCell", "plusButtonCell", "switchLabelCell"]
@@ -42,7 +42,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.register(DatePickerTableViewCell.nib(), forCellReuseIdentifier: DatePickerTableViewCell.identifier)
     }
     
-    //This function means how many row we want to add to the table view
+    //This function means how many rows we want to add to the table view
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrayOfContent.count
     }
@@ -57,7 +57,6 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         }
         
         if arrayOfContent[indexPath.row] == "goalCell" {
-            
             //Define the cell with the registered custom cell
             let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.identifier, for: indexPath) as! TextFieldTableViewCell
             cell.selectionStyle = .none
@@ -67,35 +66,36 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             goalTextField = cell.textField
             return cell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "subheadingCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: SubheadingTableViewCell.identifier, for: indexPath) as! SubheadingTableViewCell
             cell.selectionStyle = .none
             cell.labelBackground.layer.cornerRadius = 10
             return cell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "recommendationCell" {
             let recommendationCell = tableView.dequeueReusableCell(withIdentifier: RecommendationTableViewCell.identifier, for: indexPath) as! RecommendationTableViewCell
             recommendationCell.selectionStyle = .none
+            recommendationCell.delegate = self
             return recommendationCell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "labelCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: LabelOnlyTableViewCell.identifier, for: indexPath) as! LabelOnlyTableViewCell
             cell.selectionStyle = .none
             cell.labelOnly.text = "Breakdown your goal into steps:"
             return cell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "breakdownCell" {
-            let cell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.identifier, for: indexPath) as! TextFieldTableViewCell
-            cell.selectionStyle = .none
-            cell.textField.placeholder = "Breakdown your goal here"
-            breakdownTextField = cell.textField
-            return cell
+            let breakdownCell = tableView.dequeueReusableCell(withIdentifier: TextFieldTableViewCell.identifier, for: indexPath) as! TextFieldTableViewCell
+            breakdownCell.selectionStyle = .none
+            breakdownCell.textField.placeholder = "Breakdown your goal here"
+            breakdownTextField = breakdownCell.textField
+            return breakdownCell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "plusButtonCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: PlusButtonTableViewCell.identifier, for: indexPath) as! PlusButtonTableViewCell
             cell.selectionStyle = .none
@@ -103,15 +103,14 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
             cell.delegate = self
             return cell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "switchLabelCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: SwitchLabelTableViewCell.identifier, for: indexPath) as! SwitchLabelTableViewCell
             cell.selectionStyle = .none
             cell.delegate = self
-            
             return cell
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "datePickerCell" {
             let cell = tableView.dequeueReusableCell(withIdentifier: DatePickerTableViewCell.identifier, for: indexPath) as! DatePickerTableViewCell
             cell.selectionStyle = .none
@@ -131,19 +130,19 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         if arrayOfContent[indexPath.row] == "goalCell" {
             return 60
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "recommendationCell" {
             return 550
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "breakdownCell" {
             return 60
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "plusButtonCell" {
             return 60
         }
-        
+            
         else if arrayOfContent[indexPath.row] == "datePickerCell" {
             return 300
         }
@@ -152,8 +151,12 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
-        setGoal.create(goalTextField.text!, deadline, duedate.date)
-        setGoalBreakdown.create(breakdownTextField.text!)
+        print(goalTextField.text!)
+        print(breakdownTextField.text!)
+        print(deadline)
+        if let duedate = duedate?.date {
+            print(duedate)
+        }
     }
     
     @IBAction func cancelBtnPressed(_ sender: UIBarButtonItem) {
@@ -165,7 +168,7 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
 extension AddGoalViewController: PlusButtonTableViewCellDelegate {
     
     func didTapTheButton() {
-        arrayOfContent.insert("breakdownCell", at: 6)
+        arrayOfContent.insert("breakdownCell", at: arrayOfContent.index(before: 6))
         tableView.reloadData()
     }
     
@@ -180,6 +183,7 @@ extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
         } else {
             arrayOfContent.remove(at: arrayOfContent.endIndex - 1)
             deadline = false
+            duedate = nil
         }
         
         tableView.reloadData()
@@ -188,10 +192,10 @@ extension AddGoalViewController: SwitchLabelTableViewCellDelegate {
     
 }
 
-//extension AddGoalViewController: RecommendationTableViewCellDelegate {
-//
-//    func btnTapped(title: String) {
-////        textField = title
-//    }
-//
-//}
+extension AddGoalViewController: RecommendationTableViewCellDelegate {
+    
+    func btnTapped(title: String) {
+        goalTextField.text = title
+    }
+    
+}

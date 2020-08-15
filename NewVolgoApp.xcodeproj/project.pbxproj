@@ -28,6 +28,7 @@
 		24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */; };
 		24393F1A24E3A44800E6C0DD /* GoalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1924E3A44800E6C0DD /* GoalModel.swift */; };
 		24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393F1B24E3A45300E6C0DD /* JourneyModel.swift */; };
+		244E3E7E24E7B00E0073FBD7 /* DateFormatterHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244E3E7D24E7B00E0073FBD7 /* DateFormatterHelper.swift */; };
 		247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */; };
 		247CF58924E43CA50043B2C1 /* TextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */; };
 		247CF58C24E44C4F0043B2C1 /* SubheadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247CF58A24E44C4F0043B2C1 /* SubheadingTableViewCell.swift */; };
@@ -92,6 +93,7 @@
 		24393F1624E3A27C00E6C0DD /* AddJourneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddJourneyViewController.swift; sourceTree = "<group>"; };
 		24393F1924E3A44800E6C0DD /* GoalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalModel.swift; sourceTree = "<group>"; };
 		24393F1B24E3A45300E6C0DD /* JourneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyModel.swift; sourceTree = "<group>"; };
+		244E3E7D24E7B00E0073FBD7 /* DateFormatterHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterHelper.swift; sourceTree = "<group>"; };
 		247CF58624E43CA50043B2C1 /* TextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		247CF58724E43CA50043B2C1 /* TextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		247CF58A24E44C4F0043B2C1 /* SubheadingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubheadingTableViewCell.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				24393EF224E396E800E6C0DD /* Model */,
 				24393EF124E396D900E6C0DD /* Controller */,
 				24393EF024E396CF00E6C0DD /* View */,
+				244E3E7C24E7AFAE0073FBD7 /* Helper */,
 				24393EC924E396B900E6C0DD /* Assets.xcassets */,
 				24393ECB24E396B900E6C0DD /* LaunchScreen.storyboard */,
 				24393ECE24E396B900E6C0DD /* Info.plist */,
@@ -320,6 +323,14 @@
 				24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		244E3E7C24E7AFAE0073FBD7 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				244E3E7D24E7B00E0073FBD7 /* DateFormatterHelper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -481,6 +492,7 @@
 				24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */,
 				247CF59824E45C450043B2C1 /* PlusButtonTableViewCell.swift in Sources */,
 				24393F1524E3A26500E6C0DD /* EditGoalViewController.swift in Sources */,
+				244E3E7E24E7B00E0073FBD7 /* DateFormatterHelper.swift in Sources */,
 				247CF59424E457770043B2C1 /* LabelOnlyTableViewCell.swift in Sources */,
 				247CF59024E451BC0043B2C1 /* RecommendationTableViewCell.swift in Sources */,
 				24393F1724E3A27C00E6C0DD /* AddJourneyViewController.swift in Sources */,
