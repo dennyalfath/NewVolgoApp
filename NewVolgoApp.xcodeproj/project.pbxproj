@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2417FF7924E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417FF7724E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift */; };
+		2417FF7A24E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2417FF7824E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib */; };
 		24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBD24E396B800E6C0DD /* AppDelegate.swift */; };
 		24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBF24E396B800E6C0DD /* SceneDelegate.swift */; };
 		24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2417FF7724E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownTextFieldTableViewCell.swift; sourceTree = "<group>"; };
+		2417FF7824E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreakdownTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		24393EBA24E396B800E6C0DD /* NewVolgoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewVolgoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24393EBD24E396B800E6C0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24393EBF24E396B800E6C0DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -264,6 +268,8 @@
 				247CF59B24E46D7C0043B2C1 /* SwitchLabelTableViewCell.xib */,
 				24951EAB24E57AAD00F75921 /* CardListTableViewCell.swift */,
 				24951EAC24E57AAD00F75921 /* CardListTableViewCell.xib */,
+				2417FF7724E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift */,
+				2417FF7824E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib */,
 			);
 			path = Subview;
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				24393EF724E3993200E6C0DD /* AddGoal.storyboard in Resources */,
+				2417FF7A24E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib in Resources */,
 				24393EFF24E3998900E6C0DD /* AddJourney.storyboard in Resources */,
 				24393ECD24E396B900E6C0DD /* LaunchScreen.storyboard in Resources */,
 				24951EAE24E57AAD00F75921 /* CardListTableViewCell.xib in Resources */,
@@ -480,6 +487,7 @@
 				24951EB224E5957900F75921 /* GoalBreakdownModel.swift in Sources */,
 				24393F1324E3A25C00E6C0DD /* AddGoalViewController.swift in Sources */,
 				24393F1C24E3A45300E6C0DD /* JourneyModel.swift in Sources */,
+				2417FF7924E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift in Sources */,
 				24393F0F24E3A24700E6C0DD /* JourneyViewController.swift in Sources */,
 				247CF59C24E46D7C0043B2C1 /* SwitchLabelTableViewCell.swift in Sources */,
 				247CF58824E43CA50043B2C1 /* TextFieldTableViewCell.swift in Sources */,

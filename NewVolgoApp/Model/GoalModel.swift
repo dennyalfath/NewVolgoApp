@@ -17,14 +17,15 @@ struct GoalModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func create(title: String, deadline: Bool, dueDate: Date) -> Goal {
+    func create(title: String, deadline: Bool, dueDate: Date?) -> Goal {
         let newGoal = Goal(context: context)
         do {
             newGoal.id = UUID()
             newGoal.title = title
             newGoal.deadline = deadline
-            newGoal.duedate = dueDate
-            
+            if let date = dueDate {
+                newGoal.duedate = date
+            }
             try context.save()
         } catch {
             print("Error saving data \(error)")

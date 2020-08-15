@@ -13,17 +13,17 @@ struct GoalBreakdownModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
-    func create(_ breakdown: String) -> GoalBreakdown {
+    func create(breakdown: String, parentGoal: Goal) {
         let newGoalBreakdown = GoalBreakdown(context: context)
         do {
             newGoalBreakdown.id = UUID()
             newGoalBreakdown.breakdown = breakdown
+            newGoalBreakdown.parentGoal = parentGoal
             
             try context.save()
         } catch {
             print("Error saving data \(error)")
         }
-        return newGoalBreakdown
     }
     
     func retrieve() -> [GoalBreakdown]? {
