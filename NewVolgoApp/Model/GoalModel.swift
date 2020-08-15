@@ -9,10 +9,6 @@
 import UIKit
 import CoreData
 
-protocol GoalModelDelegate {
-    func updateGoal(goal: Goal)
-}
-
 struct GoalModel {
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext

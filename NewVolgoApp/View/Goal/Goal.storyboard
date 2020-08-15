@@ -32,7 +32,7 @@
                     <navigationItem key="navigationItem" title="All Goals" id="ZuV-7y-FFb">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="p94-NX-NOf">
                             <connections>
-                                <segue destination="PIN-th-nkQ" kind="presentation" id="hb2-bZ-zrJ"/>
+                                <segue destination="PIN-th-nkQ" kind="presentation" identifier="goalsToAddGoal" id="hb2-bZ-zrJ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

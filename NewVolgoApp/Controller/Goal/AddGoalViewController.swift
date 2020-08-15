@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddGoalViewControllerDelegate {
+    func updateGoal(goal: Goal)
+}
+
 class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
@@ -20,6 +24,8 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     var breakdownTextField = UITextField()
     var deadline: Bool = false
     var duedate: UIDatePicker?
+    
+    var delegate: AddGoalViewControllerDelegate?
     
     var goalTextString: String?
     
@@ -172,10 +178,6 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
     // MARK: - Done button pressed
 
     @IBAction func doneBtnPressed(_ sender: UIBarButtonItem) {
-        print(goalTextField.text!)
-        print(breakdownList)
-        print(deadline)
-        
         tableView.reloadData()
         
         let newGoal = goalModel.create(title: goalTextField.text!, deadline: deadline, dueDate: duedate?.date)
@@ -183,7 +185,9 @@ class AddGoalViewController: UIViewController, UITableViewDelegate, UITableViewD
         for breakdown in breakdownList {
             goalBreakdownModel.create(breakdown: breakdown, parentGoal: newGoal)
         }
-
+        
+        delegate?.updateGoal(goal: newGoal)
+        dismiss(animated: true, completion: nil)
     }
     
     @IBAction func cancelBtnPressed(_ sender: UIBarButtonItem) {

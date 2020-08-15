@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Na7-Ym-2AD">
-                        <rect key="frame" x="20" y="5" width="293" height="25"/>
+                        <rect key="frame" x="20" y="10" width="293" height="25"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RRK-sf-JrX">
                                 <rect key="frame" x="10" y="0.0" width="273" height="25"/>
@@ -61,8 +61,8 @@
                     <constraint firstItem="Na7-Ym-2AD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1y3-uh-PY5"/>
                     <constraint firstItem="Na7-Ym-2AD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9Sw-jn-bQe"/>
                     <constraint firstAttribute="trailing" secondItem="Na7-Ym-2AD" secondAttribute="trailing" constant="20" id="HFq-lc-Wla"/>
-                    <constraint firstAttribute="bottom" secondItem="Na7-Ym-2AD" secondAttribute="bottom" constant="5" id="g1P-IF-rGb"/>
-                    <constraint firstItem="Na7-Ym-2AD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="loo-47-RQO"/>
+                    <constraint firstAttribute="bottom" secondItem="Na7-Ym-2AD" secondAttribute="bottom" constant="10" id="g1P-IF-rGb"/>
+                    <constraint firstItem="Na7-Ym-2AD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="loo-47-RQO"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
