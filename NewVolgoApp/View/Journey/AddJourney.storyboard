@@ -24,17 +24,29 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-xJ-E7k">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vOu-xJ-E7k">
                                 <rect key="frame" x="33" y="98" width="349" height="192"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="192" id="Amn-ST-DZn"/>
                                     <constraint firstAttribute="height" constant="192" id="pRS-Mz-BDZ"/>
+                                    <constraint firstAttribute="width" constant="349" id="yah-Rk-kID"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-Ly-aIK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title of your journey" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VOV-yG-CEr">
+                                <rect key="frame" x="38" y="343" width="344" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="TpE-uQ-IYI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="organization-title"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SNg-Ly-aIK">
                                 <rect key="frame" x="158" y="298" width="99" height="25"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="99" id="3Uk-0r-qWD"/>
                                     <constraint firstAttribute="height" constant="25" id="4bM-k6-AnA"/>
                                     <constraint firstAttribute="width" constant="99" id="Hvk-yg-Vln"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="dgt-KR-m8s"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <state key="normal" image="Image"/>
@@ -42,23 +54,66 @@
                                     <action selector="addButtonImg:" destination="Hms-qw-QjK" eventType="touchUpInside" id="sns-nb-BNr"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nc0-uD-cnm">
+                                <rect key="frame" x="38" y="385" width="344" height="201"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="201" id="JuZ-Rr-Vyj"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CdO-JG-gN3">
+                                <rect key="frame" x="38" y="619" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="PUy-uF-rNC"/>
+                                    <constraint firstAttribute="width" constant="219" id="hxj-x8-Imz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <datePicker contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Zkx-9h-Q84">
+                                <rect key="frame" x="0.0" y="654" width="414" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="sgh-ko-9cC"/>
+                                </constraints>
+                                <locale key="locale" localeIdentifier="id"/>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Zkx-9h-Q84" firstAttribute="leading" secondItem="SqJ-ii-JLH" secondAttribute="leading" id="5Nm-mx-iF1"/>
+                            <constraint firstItem="CdO-JG-gN3" firstAttribute="leading" secondItem="nc0-uD-cnm" secondAttribute="leading" id="8cC-Kc-CES"/>
                             <constraint firstItem="bep-UW-fX0" firstAttribute="trailing" secondItem="SqJ-ii-JLH" secondAttribute="trailing" id="Ibx-Ec-atR"/>
                             <constraint firstItem="SNg-Ly-aIK" firstAttribute="leading" secondItem="bep-UW-fX0" secondAttribute="leading" constant="158" id="JJ8-sR-vRG"/>
                             <constraint firstItem="vOu-xJ-E7k" firstAttribute="leading" secondItem="bep-UW-fX0" secondAttribute="leading" constant="33" id="L0p-sH-6XT"/>
                             <constraint firstItem="vOu-xJ-E7k" firstAttribute="centerX" secondItem="SNg-Ly-aIK" secondAttribute="centerX" id="PDI-fQ-mGk"/>
+                            <constraint firstItem="VOV-yG-CEr" firstAttribute="leading" secondItem="bep-UW-fX0" secondAttribute="leading" constant="38" id="PG2-BC-S28"/>
+                            <constraint firstItem="Zkx-9h-Q84" firstAttribute="top" secondItem="CdO-JG-gN3" secondAttribute="bottom" constant="5" id="PwI-d1-BPz"/>
+                            <constraint firstItem="Zkx-9h-Q84" firstAttribute="trailing" secondItem="SqJ-ii-JLH" secondAttribute="trailing" id="cQP-4e-jsY"/>
                             <constraint firstItem="bep-UW-fX0" firstAttribute="trailing" secondItem="SNg-Ly-aIK" secondAttribute="trailing" constant="157" id="cq7-r0-y2w"/>
+                            <constraint firstItem="nc0-uD-cnm" firstAttribute="trailing" secondItem="VOV-yG-CEr" secondAttribute="trailing" id="doT-Rz-Pr3"/>
+                            <constraint firstItem="nc0-uD-cnm" firstAttribute="leading" secondItem="VOV-yG-CEr" secondAttribute="leading" id="g23-se-beo"/>
                             <constraint firstItem="vOu-xJ-E7k" firstAttribute="top" secondItem="SqJ-ii-JLH" secondAttribute="bottom" constant="10" id="nvD-pu-cgs"/>
                             <constraint firstItem="SNg-Ly-aIK" firstAttribute="top" secondItem="vOu-xJ-E7k" secondAttribute="bottom" constant="8" id="oWA-yn-fY5"/>
+                            <constraint firstItem="VOV-yG-CEr" firstAttribute="trailing" secondItem="vOu-xJ-E7k" secondAttribute="trailing" id="pms-2V-HQq"/>
+                            <constraint firstItem="nc0-uD-cnm" firstAttribute="top" secondItem="VOV-yG-CEr" secondAttribute="bottom" constant="8" id="pwn-ut-NNr"/>
+                            <constraint firstItem="CdO-JG-gN3" firstAttribute="top" secondItem="nc0-uD-cnm" secondAttribute="bottom" constant="33" id="qgC-fp-Hto"/>
                             <constraint firstItem="SqJ-ii-JLH" firstAttribute="top" secondItem="bep-UW-fX0" secondAttribute="top" id="slZ-iX-5pI"/>
+                            <constraint firstItem="VOV-yG-CEr" firstAttribute="top" secondItem="SNg-Ly-aIK" secondAttribute="bottom" constant="20" id="vJH-us-wqY"/>
                             <constraint firstItem="SqJ-ii-JLH" firstAttribute="leading" secondItem="4lx-cL-cxG" secondAttribute="leading" id="w8M-Ae-nRp"/>
+                            <constraint firstItem="VOV-yG-CEr" firstAttribute="top" secondItem="SNg-Ly-aIK" secondAttribute="bottom" constant="20" id="xH1-XV-hW5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="bep-UW-fX0"/>
                     </view>
                     <connections>
+                        <outlet property="dateLabel" destination="CdO-JG-gN3" id="8rO-Iz-9cr"/>
+                        <outlet property="datePicker" destination="Zkx-9h-Q84" id="5dh-cV-fCG"/>
                         <outlet property="imgView" destination="vOu-xJ-E7k" id="MAI-ts-LUT"/>
+                        <outlet property="textField" destination="VOV-yG-CEr" id="gqd-xU-egP"/>
+                        <outlet property="textView" destination="nc0-uD-cnm" id="9Fi-NJ-fpK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KT-rk-lPb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
