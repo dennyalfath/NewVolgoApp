@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Wj-Fd-f0p">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,16 +15,99 @@
                     <view key="view" contentMode="scaleToFill" id="edu-cO-aZV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="H0o-t6-1df">
+                                <rect key="frame" x="50" y="50" width="374" height="645"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4wA-Fn-dnj">
+                                    <size key="itemSize" width="320" height="596"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="24G-Wg-82r" customClass="JourneyCollectionViewCell" customModule="NewVolgoApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="5.5" width="320" height="596"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ajb-py-n01">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="596"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q5C-Mk-p0u">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="225" id="Uci-ys-T0u"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H1N-ss-DNo">
+                                                    <rect key="frame" x="8" y="250" width="304" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="frn-hR-edX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv5-Nz-LWv">
+                                                    <rect key="frame" x="8" y="282" width="200" height="18"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="200" id="McK-yl-hct"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-a2-TMl">
+                                                    <rect key="frame" x="8" y="315" width="304" height="264"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="GiI-LW-FHd"/>
+                                                    </constraints>
+                                                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.9882352941176471" green="0.85490196078431369" blue="0.015686274509803921" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" id="5Hg-uO-VpK"/>
+                                                <constraint firstItem="AXq-a2-TMl" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" constant="8" id="6ID-eH-9BL"/>
+                                                <constraint firstItem="Q5C-Mk-p0u" firstAttribute="top" secondItem="ajb-py-n01" secondAttribute="top" id="7t2-85-RKW"/>
+                                                <constraint firstItem="H1N-ss-DNo" firstAttribute="top" secondItem="Q5C-Mk-p0u" secondAttribute="bottom" constant="25" id="TKA-5a-lmC"/>
+                                                <constraint firstAttribute="trailing" secondItem="AXq-a2-TMl" secondAttribute="trailing" constant="8" id="bFH-wI-4NF"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q5C-Mk-p0u" secondAttribute="trailing" id="cGS-LN-lmd"/>
+                                                <constraint firstItem="iv5-Nz-LWv" firstAttribute="leading" secondItem="H1N-ss-DNo" secondAttribute="leading" id="daa-K7-ZiH"/>
+                                                <constraint firstAttribute="trailing" secondItem="H1N-ss-DNo" secondAttribute="trailing" constant="8" id="fzg-ze-xBw"/>
+                                                <constraint firstItem="AXq-a2-TMl" firstAttribute="top" secondItem="iv5-Nz-LWv" secondAttribute="bottom" constant="15" id="hzH-mA-FSl"/>
+                                                <constraint firstAttribute="bottom" secondItem="AXq-a2-TMl" secondAttribute="bottom" constant="17" id="lex-9M-RZ5"/>
+                                                <constraint firstItem="iv5-Nz-LWv" firstAttribute="top" secondItem="H1N-ss-DNo" secondAttribute="bottom" constant="2" id="p0m-J0-aJJ"/>
+                                                <constraint firstItem="H1N-ss-DNo" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" constant="8" id="tjT-3j-7qQ"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="320" height="596"/>
+                                        <connections>
+                                            <outlet property="imgImage" destination="Q5C-Mk-p0u" id="2eC-sa-pBI"/>
+                                            <outlet property="labelDate" destination="iv5-Nz-LWv" id="5qI-B3-OZZ"/>
+                                            <outlet property="labelTextField" destination="AXq-a2-TMl" id="Myz-hH-2Ju"/>
+                                            <outlet property="labelTitle" destination="H1N-ss-DNo" id="laG-yI-bl6"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Cbv-RZ-qkA"/>
                     </view>
                     <navigationItem key="navigationItem" title="Journey" id="FdW-wp-o5T">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hJ-ZG-l7H">
                             <connections>
-                                <segue destination="qIw-P3-QDQ" kind="presentation" id="E0s-Ls-Yyr"/>
+                                <segue destination="qIw-P3-QDQ" kind="presentation" identifier="journeyToAddJourney" id="E0s-Ls-Yyr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="H0o-t6-1df" id="mNL-h4-hyB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lhx-nI-ara" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
