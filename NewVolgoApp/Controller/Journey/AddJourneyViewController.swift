@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddJourneyViewControllerDelegate {
+    func updateJourney(journey: Journey)
+}
+
 class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate{
 
     @IBOutlet weak var imgView: UIImageView!
@@ -15,6 +19,10 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var dateTextField: UITextField!
     
+    var journeyModel = JourneyModel()
+    var date = UIDatePicker()
+    
+    var delegate: AddJourneyViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +33,7 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
         bottomLine.frame = CGRect(x: 0, y: textField.frame.height - 1, width: textField.frame.width, height: 1)
         bottomLine.backgroundColor = UIColor.init(red: 83/255, green: 87/255, blue: 94/255, alpha: 1).cgColor
         
-            textField.layer.addSublayer(bottomLine)
+        textField.layer.addSublayer(bottomLine)
         textView.text = "Your journey description"
         textView.textColor = UIColor.lightGray
         textView.returnKeyType = .done
@@ -96,6 +104,24 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
         self.present(actionSheet, animated: true, completion: nil)
         
     }
+    //MARK: - Button Done
+    @IBAction func buttonDone(_ sender: Any) {
+        let data = (imgView?.image)!.pngData()
+        let newJourney = journeyModel.create(
+            title: textField.text!,
+            desc: textView.text,
+            date: date.date,
+            image: data)
+
+        delegate.updateJourney(journey: newJourney)
+        dismiss(animated: true, completion: nil)
+    }
+    
+    //MARK: - Button Cancel
+    @IBAction func buttonCancel(_ sender: Any) {
+        
+    }
+    
     //Picking image from library
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info [UIImagePickerController.InfoKey.originalImage] as! UIImage
@@ -132,5 +158,7 @@ class AddJourneyViewController: UIViewController, UIImagePickerControllerDelegat
         formatter.timeStyle = DateFormatter.Style.none
         
         dateTextField.text = formatter.string(from: sender.date)
+        
+        date.date = sender.date
     }
 }

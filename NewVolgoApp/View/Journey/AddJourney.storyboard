@@ -19,8 +19,16 @@
                                 <rect key="frame" x="0.0" y="44" width="415" height="44"/>
                                 <items>
                                     <navigationItem title="Add Your Journey" id="geA-WB-DiS">
-                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="eue-Np-JhY"/>
-                                        <barButtonItem key="rightBarButtonItem" title="Done" id="Gze-3D-zYh"/>
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="eue-Np-JhY">
+                                            <connections>
+                                                <action selector="buttonCancel:" destination="Hms-qw-QjK" id="Vht-nr-E5S"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Done" id="Gze-3D-zYh">
+                                            <connections>
+                                                <action selector="buttonDone:" destination="Hms-qw-QjK" id="ZUp-uM-rpy"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>

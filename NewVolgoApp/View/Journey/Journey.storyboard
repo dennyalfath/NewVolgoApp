@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4wA-Fn-dnj">
-                                    <size key="itemSize" width="316" height="596"/>
+                                    <size key="itemSize" width="320" height="596"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -35,7 +35,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Q5C-Mk-p0u">
-                                                    <rect key="frame" x="0.0" y="0.0" width="316" height="225"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="225"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="225" id="Uci-ys-T0u"/>
                                                     </constraints>
@@ -45,36 +45,37 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="30" id="frn-hR-edX"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iv5-Nz-LWv">
-                                                    <rect key="frame" x="8" y="282" width="150" height="18"/>
+                                                    <rect key="frame" x="8" y="282" width="200" height="18"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="150" id="McK-yl-hct"/>
+                                                        <constraint firstAttribute="width" constant="200" id="McK-yl-hct"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-a2-TMl">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXq-a2-TMl">
                                                     <rect key="frame" x="8" y="315" width="304" height="264"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="300" id="GiI-LW-FHd"/>
                                                     </constraints>
                                                     <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                                    <fontDescription key="fontDescription" name="Verdana" family="Verdana" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences" keyboardType="alphabet"/>
                                                 </textView>
                                             </subviews>
+                                            <color key="backgroundColor" red="0.9882352941176471" green="0.85490196078431369" blue="0.015686274509803921" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstItem="Q5C-Mk-p0u" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" id="5Hg-uO-VpK"/>
                                                 <constraint firstItem="AXq-a2-TMl" firstAttribute="leading" secondItem="ajb-py-n01" secondAttribute="leading" constant="8" id="6ID-eH-9BL"/>
                                                 <constraint firstItem="Q5C-Mk-p0u" firstAttribute="top" secondItem="ajb-py-n01" secondAttribute="top" id="7t2-85-RKW"/>
                                                 <constraint firstItem="H1N-ss-DNo" firstAttribute="top" secondItem="Q5C-Mk-p0u" secondAttribute="bottom" constant="25" id="TKA-5a-lmC"/>
                                                 <constraint firstAttribute="trailing" secondItem="AXq-a2-TMl" secondAttribute="trailing" constant="8" id="bFH-wI-4NF"/>
-                                                <constraint firstAttribute="trailing" secondItem="Q5C-Mk-p0u" secondAttribute="trailing" constant="4" id="cGS-LN-lmd"/>
+                                                <constraint firstAttribute="trailing" secondItem="Q5C-Mk-p0u" secondAttribute="trailing" id="cGS-LN-lmd"/>
                                                 <constraint firstItem="iv5-Nz-LWv" firstAttribute="leading" secondItem="H1N-ss-DNo" secondAttribute="leading" id="daa-K7-ZiH"/>
                                                 <constraint firstAttribute="trailing" secondItem="H1N-ss-DNo" secondAttribute="trailing" constant="8" id="fzg-ze-xBw"/>
                                                 <constraint firstItem="AXq-a2-TMl" firstAttribute="top" secondItem="iv5-Nz-LWv" secondAttribute="bottom" constant="15" id="hzH-mA-FSl"/>
@@ -85,10 +86,10 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="320" height="596"/>
                                         <connections>
-                                            <outlet property="imgImage" destination="Q5C-Mk-p0u" id="9sV-qa-J1C"/>
-                                            <outlet property="labelDate" destination="iv5-Nz-LWv" id="UOX-oZ-scx"/>
-                                            <outlet property="labelTextField" destination="AXq-a2-TMl" id="fGG-vm-YkX"/>
-                                            <outlet property="labelTitle" destination="H1N-ss-DNo" id="Il4-JX-hRy"/>
+                                            <outlet property="imgImage" destination="Q5C-Mk-p0u" id="2eC-sa-pBI"/>
+                                            <outlet property="labelDate" destination="iv5-Nz-LWv" id="5qI-B3-OZZ"/>
+                                            <outlet property="labelTextField" destination="AXq-a2-TMl" id="Myz-hH-2Ju"/>
+                                            <outlet property="labelTitle" destination="H1N-ss-DNo" id="laG-yI-bl6"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -100,7 +101,7 @@
                     <navigationItem key="navigationItem" title="Journey" id="FdW-wp-o5T">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="1hJ-ZG-l7H">
                             <connections>
-                                <segue destination="qIw-P3-QDQ" kind="presentation" id="E0s-Ls-Yyr"/>
+                                <segue destination="qIw-P3-QDQ" kind="presentation" identifier="journeyToAddJourney" id="E0s-Ls-Yyr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
