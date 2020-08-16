@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C6D75124E5C03900C303C1 /* JourneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */; };
 		2417FF7924E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2417FF7724E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift */; };
 		2417FF7A24E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2417FF7824E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib */; };
-		13C6D75124E5C03900C303C1 /* JourneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */; };
 		24393EBE24E396B800E6C0DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBD24E396B800E6C0DD /* AppDelegate.swift */; };
 		24393EC024E396B800E6C0DD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24393EBF24E396B800E6C0DD /* SceneDelegate.swift */; };
 		24393EC824E396B800E6C0DD /* NewVolgoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24393EC624E396B800E6C0DD /* NewVolgoApp.xcdatamodeld */; };
@@ -69,10 +69,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyCollectionViewCell.swift; sourceTree = "<group>"; };
 		2417FF7724E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownTextFieldTableViewCell.swift; sourceTree = "<group>"; };
 		2417FF7824E7F4B2009BB247 /* BreakdownTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BreakdownTextFieldTableViewCell.xib; sourceTree = "<group>"; };
-		13C6D75024E5C03900C303C1 /* JourneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JourneyCollectionViewCell.swift; sourceTree = "<group>"; };
-		24393EBA24E396B800E6C0DD /* NewVolgoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewVolgoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24393EBA24E396B800E6C0DD /* Volgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Volgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24393EBD24E396B800E6C0DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24393EBF24E396B800E6C0DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		24393EC724E396B800E6C0DD /* NewVolgoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewVolgoApp.xcdatamodel; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		24393EBB24E396B800E6C0DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24393EBA24E396B800E6C0DD /* NewVolgoApp.app */,
+				24393EBA24E396B800E6C0DD /* Volgo.app */,
 				24393ED324E396B900E6C0DD /* NewVolgoAppTests.xctest */,
 				24393EDE24E396B900E6C0DD /* NewVolgoAppUITests.xctest */,
 			);
@@ -359,7 +359,7 @@
 			);
 			name = NewVolgoApp;
 			productName = NewVolgoApp;
-			productReference = 24393EBA24E396B800E6C0DD /* NewVolgoApp.app */;
+			productReference = 24393EBA24E396B800E6C0DD /* Volgo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		24393ED224E396B900E6C0DD /* NewVolgoAppTests */ = {
@@ -682,9 +682,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Volgo;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -700,9 +700,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = www.infinitelearning.id.NewVolgoApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Volgo;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
