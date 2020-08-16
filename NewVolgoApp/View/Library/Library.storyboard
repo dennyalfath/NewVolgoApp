@@ -18,9 +18,8 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Volgo" translatesAutoresizingMaskIntoConstraints="NO" id="BWV-cs-KAz">
                                 <rect key="frame" x="102" y="262" width="211" height="205"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available soon for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-Dx-vJ4">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Available soon for you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-Dx-vJ4">
                                 <rect key="frame" x="79" y="475" width="256" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,7 +30,11 @@
                             <constraint firstItem="BWV-cs-KAz" firstAttribute="top" secondItem="IWK-sY-djt" secondAttribute="top" constant="122" id="36F-Cy-s5t"/>
                             <constraint firstItem="IWK-sY-djt" firstAttribute="bottom" secondItem="BWV-cs-KAz" secondAttribute="bottom" constant="346" id="Kch-F1-L79"/>
                             <constraint firstItem="IWK-sY-djt" firstAttribute="trailing" secondItem="BWV-cs-KAz" secondAttribute="trailing" constant="101" id="Pcg-3R-YVP"/>
+                            <constraint firstItem="V2N-Dx-vJ4" firstAttribute="leading" secondItem="IWK-sY-djt" secondAttribute="leading" constant="79" id="hnb-85-hR4"/>
+                            <constraint firstItem="IWK-sY-djt" firstAttribute="bottom" secondItem="V2N-Dx-vJ4" secondAttribute="bottom" constant="308" id="mvT-AJ-3G3"/>
+                            <constraint firstItem="IWK-sY-djt" firstAttribute="trailing" secondItem="V2N-Dx-vJ4" secondAttribute="trailing" constant="79" id="qvc-Ol-gtu"/>
                             <constraint firstItem="BWV-cs-KAz" firstAttribute="leading" secondItem="IWK-sY-djt" secondAttribute="leading" constant="102" id="tEh-Pj-1Dz"/>
+                            <constraint firstItem="V2N-Dx-vJ4" firstAttribute="top" secondItem="BWV-cs-KAz" secondAttribute="bottom" constant="8" id="tjb-9r-lEU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IWK-sY-djt"/>
                     </view>
